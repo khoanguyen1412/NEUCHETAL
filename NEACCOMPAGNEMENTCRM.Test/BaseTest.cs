@@ -17,6 +17,9 @@ namespace NEACCOMPAGNEMENTCRM.Test
     {
 
         public const string UNIT_TEST_NAME = "UNIT_TEST_NAME";
+        public const string NAME_A = "NAME A";
+        public const string NAME_B = "NAME B";
+        public const string NAME_C = "NAME C";
         
         public BaseTest()
         {
