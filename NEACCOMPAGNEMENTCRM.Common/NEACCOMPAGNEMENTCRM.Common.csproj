@@ -94,11 +94,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Actions.cs" />
+    <Compile Include="Common\Entities.cs" />
+    <Compile Include="Common\Optionset.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="Entities.cs" />
     <Compile Include="Helpers\CrmHelper.cs" />
     <Compile Include="Helpers\LogHelper.cs" />
-    <Compile Include="OptionSets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
