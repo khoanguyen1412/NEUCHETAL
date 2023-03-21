@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\khg\\Desktop\\ReactJS\\NEUCHETAL\\NEACCOMPAGNEMENTCRM.Test\\NEACCOMPAGNEMENTCRM.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\khg\\Desktop\\ReactJS\\NEUCHETAL\\NEACCOMPAGNEMENTCRM.Common\\NEACCOMPAGNEMENTCRM.Common.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\khg\\Desktop\\ReactJS\\NEUCHETAL\\NEACCOMPAGNEMENTCRM.Common\\NEACCOMPAGNEMENTCRM.Common.csproj",
+        "projectName": "NEACCOMPAGNEMENTCRM.Common",
+        "projectPath": "C:\\Users\\khg\\Desktop\\ReactJS\\NEUCHETAL\\NEACCOMPAGNEMENTCRM.Common\\NEACCOMPAGNEMENTCRM.Common.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\khg\\Desktop\\ReactJS\\NEUCHETAL\\NEACCOMPAGNEMENTCRM.Test\\NEACCOMPAGNEMENTCRM.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\khg\\Desktop\\ReactJS\\NEUCHETAL\\NEACCOMPAGNEMENTCRM.Test\\NEACCOMPAGNEMENTCRM.Test.csproj",
+        "projectName": "NEACCOMPAGNEMENTCRM.Test",
+        "projectPath": "C:\\Users\\khg\\Desktop\\ReactJS\\NEUCHETAL\\NEACCOMPAGNEMENTCRM.Test\\NEACCOMPAGNEMENTCRM.Test.csproj",
+        "packagesPath": "C:\\Users\\khg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\khg\\Desktop\\ReactJS\\NEUCHETAL\\NEACCOMPAGNEMENTCRM.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\khg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\khg\\Desktop\\ReactJS\\NEUCHETAL\\NEACCOMPAGNEMENTCRM.Common\\NEACCOMPAGNEMENTCRM.Common.csproj": {
+                "projectPath": "C:\\Users\\khg\\Desktop\\ReactJS\\NEUCHETAL\\NEACCOMPAGNEMENTCRM.Common\\NEACCOMPAGNEMENTCRM.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.CrmSdk.CoreAssemblies": {
+              "target": "Package",
+              "version": "[9.0.2.48, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

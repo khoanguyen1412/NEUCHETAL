@@ -97,6 +97,7 @@
     <Compile Include="Common\Actions.cs" />
     <Compile Include="Common\Entities.cs" />
     <Compile Include="Common\Optionset.cs" />
+    <Compile Include="Common\XrmServerContext.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Helpers\CrmHelper.cs" />
     <Compile Include="Helpers\LogHelper.cs" />
