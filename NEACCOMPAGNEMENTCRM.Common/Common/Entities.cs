@@ -6,7 +6,7 @@
 //     Changes to this file may cause incorrect behavior and will be lost if
 //     the code is regenerated.
 // </auto-generated>
-// Created via this command line: "C:\Users\khg\AppData\Roaming\MscrmTools\XrmToolBox\Plugins\DLaB.EarlyBoundGenerator\crmsvcutil.exe" /url:"http://biss-dev:5555/DOVB1" /namespace:"NEACCOMPAGNEMENTCRM.Common" /SuppressGeneratedCodeAttribute /out:"C:\Users\khg\Desktop\ReactJS\NEUCHETAL\NEACCOMPAGNEMENTCRM.Common\Common\Entities.cs" /servicecontextname:"XrmServiceContext" /codecustomization:"DLaB.CrmSvcUtilExtensions.Entity.CustomizeCodeDomService,DLaB.CrmSvcUtilExtensions" /codegenerationservice:"DLaB.CrmSvcUtilExtensions.Entity.CustomCodeGenerationService,DLaB.CrmSvcUtilExtensions" /codewriterfilter:"DLaB.CrmSvcUtilExtensions.Entity.CodeWriterFilterService,DLaB.CrmSvcUtilExtensions" /namingservice:"DLaB.CrmSvcUtilExtensions.NamingService,DLaB.CrmSvcUtilExtensions" /metadataproviderservice:"DLaB.CrmSvcUtilExtensions.Entity.MetadataProviderService,DLaB.CrmSvcUtilExtensions" 
+// Created via this command line: "C:\Users\khg\AppData\Roaming\MscrmTools\XrmToolBox\Plugins\DLaB.EarlyBoundGenerator\crmsvcutil.exe" /url:"http://bcv-crm:5555/test" /namespace:"NEACCOMPAGNEMENTCRM.Common" /SuppressGeneratedCodeAttribute /out:"C:\Users\khg\Desktop\ReactJS\NEUCHETAL\NEACCOMPAGNEMENTCRM.Common\Common\Entities.cs" /servicecontextname:"XrmServiceContext" /codecustomization:"DLaB.CrmSvcUtilExtensions.Entity.CustomizeCodeDomService,DLaB.CrmSvcUtilExtensions" /codegenerationservice:"DLaB.CrmSvcUtilExtensions.Entity.CustomCodeGenerationService,DLaB.CrmSvcUtilExtensions" /codewriterfilter:"DLaB.CrmSvcUtilExtensions.Entity.CodeWriterFilterService,DLaB.CrmSvcUtilExtensions" /namingservice:"DLaB.CrmSvcUtilExtensions.NamingService,DLaB.CrmSvcUtilExtensions" /metadataproviderservice:"DLaB.CrmSvcUtilExtensions.Entity.MetadataProviderService,DLaB.CrmSvcUtilExtensions" 
 //------------------------------------------------------------------------------
 
 [assembly: Microsoft.Xrm.Sdk.Client.ProxyTypesAssemblyAttribute()]
@@ -4654,7 +4654,6 @@ namespace NEACCOMPAGNEMENTCRM.Common
 			public const string DoNotPostalMail = "donotpostalmail";
 			public const string DoNotSendMM = "donotsendmm";
 			public const string EducationCode = "educationcode";
-			public const string elca_Visa = "elca_visa";
 			public const string EMailAddress1 = "emailaddress1";
 			public const string EMailAddress2 = "emailaddress2";
 			public const string EMailAddress3 = "emailaddress3";
@@ -7464,26 +7463,6 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		}
 		
 		/// <summary>
-		/// 
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("elca_visa")]
-		public string elca_Visa
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				return this.GetAttributeValue<string>("elca_visa");
-			}
-			[System.Diagnostics.DebuggerNonUserCode()]
-			set
-			{
-				this.OnPropertyChanging("elca_Visa");
-				this.SetAttributeValue("elca_visa", value);
-				this.OnPropertyChanged("elca_Visa");
-			}
-		}
-		
-		/// <summary>
 		/// Type the primary email address for the contact.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("emailaddress1")]
@@ -9643,7 +9622,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		
 		public const string EntitySetName = "depne_contacts";
 		
-		public const int EntityTypeCode = 10116;
+		public const int EntityTypeCode = 10112;
 		
 		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		
@@ -10423,7 +10402,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		
 		public const string EntitySetName = "depne_professionelshps";
 		
-		public const int EntityTypeCode = 10119;
+		public const int EntityTypeCode = 10115;
 		
 		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		
@@ -11375,7 +11354,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		
 		public const string EntitySetName = "depne_responsableses";
 		
-		public const int EntityTypeCode = 10121;
+		public const int EntityTypeCode = 10117;
 		
 		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		

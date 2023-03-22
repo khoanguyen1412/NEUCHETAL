@@ -8,15 +8,15 @@
   <Version>1.2022.5.3</Version>
   <ExtensionConfig>
     <ActionPrefixesWhitelist />
-    <ActionsWhitelist>pvaauthorize|
-pvacreatebotcomponents|
-pvacreatecontentsnapshot|
-pvadeletebot|
-pvagetdirectlineendpoint|
-pvagetfeaturecontrolset|
-pvagetuserbots|
-pvapublish|
-pvastartconversation</ActionsWhitelist>
+    <ActionsWhitelist>depne_LinkIncidentToEmailSender|
+PvaAuthorize|
+PvaCreateBotComponents|
+PvaCreateContentSnapshot|
+PvaDeleteBot|
+PvaGetDirectLineEndpoint|
+PvaGetFeatureControlSet|
+PvaGetUserBots|
+PvaPublish</ActionsWhitelist>
     <ActionsToSkip />
     <AddDebuggerNonUserCode>true</AddDebuggerNonUserCode>
     <AddNewFilesToProject>true</AddNewFilesToProject>

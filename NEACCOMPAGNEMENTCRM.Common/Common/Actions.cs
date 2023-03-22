@@ -6,7 +6,7 @@
 //     Changes to this file may cause incorrect behavior and will be lost if
 //     the code is regenerated.
 // </auto-generated>
-// Created via this command line: "C:\Users\khg\AppData\Roaming\MscrmTools\XrmToolBox\Plugins\DLaB.EarlyBoundGenerator\crmsvcutil.exe" /url:"http://biss-dev:5555/DOVB1" /generateActions /out:"C:\Users\khg\Desktop\ReactJS\NEUCHETAL\NEACCOMPAGNEMENTCRM.Common\Common\Actions.cs" /namespace:"NEACCOMPAGNEMENTCRM.Common" /SuppressGeneratedCodeAttribute /codecustomization:"DLaB.CrmSvcUtilExtensions.Action.CustomizeCodeDomService,DLaB.CrmSvcUtilExtensions" /codegenerationservice:"DLaB.CrmSvcUtilExtensions.Action.CustomCodeGenerationService,DLaB.CrmSvcUtilExtensions" /codewriterfilter:"DLaB.CrmSvcUtilExtensions.Action.CodeWriterFilterService,DLaB.CrmSvcUtilExtensions" /metadataproviderservice:"DLaB.CrmSvcUtilExtensions.BaseMetadataProviderService,DLaB.CrmSvcUtilExtensions" 
+// Created via this command line: "C:\Users\khg\AppData\Roaming\MscrmTools\XrmToolBox\Plugins\DLaB.EarlyBoundGenerator\crmsvcutil.exe" /url:"http://bcv-crm:5555/test" /generateActions /out:"C:\Users\khg\Desktop\ReactJS\NEUCHETAL\NEACCOMPAGNEMENTCRM.Common\Common\Actions.cs" /namespace:"NEACCOMPAGNEMENTCRM.Common" /SuppressGeneratedCodeAttribute /codecustomization:"DLaB.CrmSvcUtilExtensions.Action.CustomizeCodeDomService,DLaB.CrmSvcUtilExtensions" /codegenerationservice:"DLaB.CrmSvcUtilExtensions.Action.CustomCodeGenerationService,DLaB.CrmSvcUtilExtensions" /codewriterfilter:"DLaB.CrmSvcUtilExtensions.Action.CodeWriterFilterService,DLaB.CrmSvcUtilExtensions" /metadataproviderservice:"DLaB.CrmSvcUtilExtensions.BaseMetadataProviderService,DLaB.CrmSvcUtilExtensions" 
 //------------------------------------------------------------------------------
 
 namespace NEACCOMPAGNEMENTCRM.Common
@@ -568,6 +568,56 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		public const string ActionLogicalName = "PvaAuthorize";
 		
 		public PvaAuthorizeResponse()
+		{
+		}
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/depne/")]
+	[Microsoft.Xrm.Sdk.Client.RequestProxyAttribute("depne_LinkIncidentToEmailSender")]
+	public partial class depne_LinkIncidentToEmailSenderRequest : Microsoft.Xrm.Sdk.OrganizationRequest
+	{
+		
+		public static class Fields
+		{
+			public const string Target = "Target";
+		}
+		
+		public const string ActionLogicalName = "depne_LinkIncidentToEmailSender";
+		
+		public Microsoft.Xrm.Sdk.EntityReference Target
+		{
+			get
+			{
+				if (this.Parameters.Contains("Target"))
+				{
+					return ((Microsoft.Xrm.Sdk.EntityReference)(this.Parameters["Target"]));
+				}
+				else
+				{
+					return default(Microsoft.Xrm.Sdk.EntityReference);
+				}
+			}
+			set
+			{
+				this.Parameters["Target"] = value;
+			}
+		}
+		
+		public depne_LinkIncidentToEmailSenderRequest()
+		{
+			this.RequestName = "depne_LinkIncidentToEmailSender";
+			this.Target = default(Microsoft.Xrm.Sdk.EntityReference);
+		}
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/depne/")]
+	[Microsoft.Xrm.Sdk.Client.ResponseProxyAttribute("depne_LinkIncidentToEmailSender")]
+	public partial class depne_LinkIncidentToEmailSenderResponse : Microsoft.Xrm.Sdk.OrganizationResponse
+	{
+		
+		public const string ActionLogicalName = "depne_LinkIncidentToEmailSender";
+		
+		public depne_LinkIncidentToEmailSenderResponse()
 		{
 		}
 	}

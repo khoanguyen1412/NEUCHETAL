@@ -1,6 +1,6 @@
 C:\Users\khg\Desktop\ReactJS\NEUCHETAL\CrmPackage\bin\Debug\CrmPackage.dll
 C:\Users\khg\Desktop\ReactJS\NEUCHETAL\CrmPackage\bin\Debug\CrmPackage.pdb
-C:\Users\khg\Desktop\ReactJS\NEUCHETAL\CrmPackage\obj\Debug\CrmPackage.csproj.AssemblyReference.cache
 C:\Users\khg\Desktop\ReactJS\NEUCHETAL\CrmPackage\obj\Debug\CrmPackage.csproj.CoreCompileInputs.cache
 C:\Users\khg\Desktop\ReactJS\NEUCHETAL\CrmPackage\obj\Debug\CrmPackage.dll
 C:\Users\khg\Desktop\ReactJS\NEUCHETAL\CrmPackage\obj\Debug\CrmPackage.pdb
+C:\Users\khg\Desktop\ReactJS\NEUCHETAL\CrmPackage\obj\Debug\CrmPackage.csproj.AssemblyReference.cache
