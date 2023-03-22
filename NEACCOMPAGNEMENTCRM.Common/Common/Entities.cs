@@ -3114,7 +3114,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Shows whether the account is active or inactive. Inactive accounts are read-only and can't be edited unless they are reactivated.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecode")]
-		public System.Nullable<NEACCOMPAGNEMENTCRM.Common.AccountState> StateCode
+		public System.Nullable<AccountState> StateCode
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -3122,7 +3122,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("statecode");
 				if ((optionSet != null))
 				{
-					return ((NEACCOMPAGNEMENTCRM.Common.AccountState)(System.Enum.ToObject(typeof(NEACCOMPAGNEMENTCRM.Common.AccountState), optionSet.Value)));
+					return ((AccountState)(System.Enum.ToObject(typeof(AccountState), optionSet.Value)));
 				}
 				else
 				{
@@ -3475,18 +3475,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N account_activity_parties
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_activity_parties")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> account_activity_parties
+		public System.Collections.Generic.IEnumerable<ActivityParty> account_activity_parties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("account_activity_parties", null);
+				return this.GetRelatedEntities<ActivityParty>("account_activity_parties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("account_activity_parties");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("account_activity_parties", null, value);
+				this.SetRelatedEntities<ActivityParty>("account_activity_parties", null, value);
 				this.OnPropertyChanged("account_activity_parties");
 			}
 		}
@@ -3495,18 +3495,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N Account_Email_EmailSender
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Account_Email_EmailSender")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> Account_Email_EmailSender
+		public System.Collections.Generic.IEnumerable<Email> Account_Email_EmailSender
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Account_Email_EmailSender", null);
+				return this.GetRelatedEntities<Email>("Account_Email_EmailSender", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Account_Email_EmailSender");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Account_Email_EmailSender", null, value);
+				this.SetRelatedEntities<Email>("Account_Email_EmailSender", null, value);
 				this.OnPropertyChanged("Account_Email_EmailSender");
 			}
 		}
@@ -3515,18 +3515,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N Account_Email_SendersAccount
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Account_Email_SendersAccount")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> Account_Email_SendersAccount
+		public System.Collections.Generic.IEnumerable<Email> Account_Email_SendersAccount
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Account_Email_SendersAccount", null);
+				return this.GetRelatedEntities<Email>("Account_Email_SendersAccount", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Account_Email_SendersAccount");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Account_Email_SendersAccount", null, value);
+				this.SetRelatedEntities<Email>("Account_Email_SendersAccount", null, value);
 				this.OnPropertyChanged("Account_Email_SendersAccount");
 			}
 		}
@@ -3535,18 +3535,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N Account_Emails
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Account_Emails")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> Account_Emails
+		public System.Collections.Generic.IEnumerable<Email> Account_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Account_Emails", null);
+				return this.GetRelatedEntities<Email>("Account_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Account_Emails");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Account_Emails", null, value);
+				this.SetRelatedEntities<Email>("Account_Emails", null, value);
 				this.OnPropertyChanged("Account_Emails");
 			}
 		}
@@ -3555,18 +3555,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N account_master_account
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> Referencedaccount_master_account
+		public System.Collections.Generic.IEnumerable<Account> Referencedaccount_master_account
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<Account>("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedaccount_master_account");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<Account>("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedaccount_master_account");
 			}
 		}
@@ -3575,18 +3575,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N account_parent_account
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> Referencedaccount_parent_account
+		public System.Collections.Generic.IEnumerable<Account> Referencedaccount_parent_account
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedaccount_parent_account");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedaccount_parent_account");
 			}
 		}
@@ -3595,18 +3595,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N contact_customer_accounts
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_customer_accounts")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> contact_customer_accounts
+		public System.Collections.Generic.IEnumerable<Contact> contact_customer_accounts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_customer_accounts", null);
+				return this.GetRelatedEntities<Contact>("contact_customer_accounts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("contact_customer_accounts");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_customer_accounts", null, value);
+				this.SetRelatedEntities<Contact>("contact_customer_accounts", null, value);
 				this.OnPropertyChanged("contact_customer_accounts");
 			}
 		}
@@ -3615,18 +3615,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N incident_customer_accounts
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_customer_accounts")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> incident_customer_accounts
+		public System.Collections.Generic.IEnumerable<Incident> incident_customer_accounts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_customer_accounts", null);
+				return this.GetRelatedEntities<Incident>("incident_customer_accounts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("incident_customer_accounts");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_customer_accounts", null, value);
+				this.SetRelatedEntities<Incident>("incident_customer_accounts", null, value);
 				this.OnPropertyChanged("incident_customer_accounts");
 			}
 		}
@@ -3635,18 +3635,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_account_contact
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_account_contact")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> depne_account_contact
+		public System.Collections.Generic.IEnumerable<Contact> depne_account_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("depne_account_contact", null);
+				return this.GetRelatedEntities<Contact>("depne_account_contact", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_account_contact");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("depne_account_contact", null, value);
+				this.SetRelatedEntities<Contact>("depne_account_contact", null, value);
 				this.OnPropertyChanged("depne_account_contact");
 			}
 		}
@@ -3655,18 +3655,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_account_depne_professionelshp
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_account_depne_professionelshp")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp> depne_account_depne_professionelshp
+		public System.Collections.Generic.IEnumerable<depne_professionelshp> depne_account_depne_professionelshp
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_account_depne_professionelshp", null);
+				return this.GetRelatedEntities<depne_professionelshp>("depne_account_depne_professionelshp", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_account_depne_professionelshp");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_account_depne_professionelshp", null, value);
+				this.SetRelatedEntities<depne_professionelshp>("depne_account_depne_professionelshp", null, value);
 				this.OnPropertyChanged("depne_account_depne_professionelshp");
 			}
 		}
@@ -3675,18 +3675,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_depne_responsables_account
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_depne_responsables_account")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_responsables> depne_depne_responsables_account
+		public System.Collections.Generic.IEnumerable<depne_responsables> depne_depne_responsables_account
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("depne_depne_responsables_account", null);
+				return this.GetRelatedEntities<depne_responsables>("depne_depne_responsables_account", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_depne_responsables_account");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("depne_depne_responsables_account", null, value);
+				this.SetRelatedEntities<depne_responsables>("depne_depne_responsables_account", null, value);
 				this.OnPropertyChanged("depne_depne_responsables_account");
 			}
 		}
@@ -3696,12 +3696,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("masterid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.Account Referencingaccount_master_account
+		public Account Referencingaccount_master_account
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<Account>("account_master_account", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 		}
 		
@@ -3710,18 +3710,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("parentaccountid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.Account Referencingaccount_parent_account
+		public Account Referencingaccount_parent_account
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencingaccount_parent_account");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntity<Account>("account_parent_account", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencingaccount_parent_account");
 			}
 		}
@@ -3731,18 +3731,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("primarycontactid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_primary_contact")]
-		public NEACCOMPAGNEMENTCRM.Common.Contact account_primary_contact
+		public Contact account_primary_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("account_primary_contact", null);
+				return this.GetRelatedEntity<Contact>("account_primary_contact", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("account_primary_contact");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("account_primary_contact", null, value);
+				this.SetRelatedEntity<Contact>("account_primary_contact", null, value);
 				this.OnPropertyChanged("account_primary_contact");
 			}
 		}
@@ -3752,12 +3752,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_accountbase_createdby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_accountbase_createdby
+		public SystemUser lk_accountbase_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_accountbase_createdby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_accountbase_createdby", null);
 			}
 		}
 		
@@ -3766,18 +3766,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_accountbase_createdonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_accountbase_createdonbehalfby
+		public SystemUser lk_accountbase_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_accountbase_createdonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_accountbase_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_accountbase_createdonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_accountbase_createdonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_accountbase_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_accountbase_createdonbehalfby");
 			}
 		}
@@ -3787,12 +3787,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_accountbase_modifiedby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_accountbase_modifiedby
+		public SystemUser lk_accountbase_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_accountbase_modifiedby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_accountbase_modifiedby", null);
 			}
 		}
 		
@@ -3801,18 +3801,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_accountbase_modifiedonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_accountbase_modifiedonbehalfby
+		public SystemUser lk_accountbase_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_accountbase_modifiedonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_accountbase_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_accountbase_modifiedonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_accountbase_modifiedonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_accountbase_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_accountbase_modifiedonbehalfby");
 			}
 		}
@@ -3822,18 +3822,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("preferredsystemuserid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("system_user_accounts")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser system_user_accounts
+		public SystemUser system_user_accounts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("system_user_accounts", null);
+				return this.GetRelatedEntity<SystemUser>("system_user_accounts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("system_user_accounts");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("system_user_accounts", null, value);
+				this.SetRelatedEntity<SystemUser>("system_user_accounts", null, value);
 				this.OnPropertyChanged("system_user_accounts");
 			}
 		}
@@ -3843,12 +3843,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owninguser")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("user_accounts")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser user_accounts
+		public SystemUser user_accounts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("user_accounts", null);
+				return this.GetRelatedEntity<SystemUser>("user_accounts", null);
 			}
 		}
 		
@@ -4310,18 +4310,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("partyid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_activity_parties")]
-		public NEACCOMPAGNEMENTCRM.Common.Account account_activity_parties
+		public Account account_activity_parties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("account_activity_parties", null);
+				return this.GetRelatedEntity<Account>("account_activity_parties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("account_activity_parties");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("account_activity_parties", null, value);
+				this.SetRelatedEntity<Account>("account_activity_parties", null, value);
 				this.OnPropertyChanged("account_activity_parties");
 			}
 		}
@@ -4331,18 +4331,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("partyid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_activity_parties")]
-		public NEACCOMPAGNEMENTCRM.Common.Contact contact_activity_parties
+		public Contact contact_activity_parties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_activity_parties", null);
+				return this.GetRelatedEntity<Contact>("contact_activity_parties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("contact_activity_parties");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_activity_parties", null, value);
+				this.SetRelatedEntity<Contact>("contact_activity_parties", null, value);
 				this.OnPropertyChanged("contact_activity_parties");
 			}
 		}
@@ -4352,18 +4352,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("partyid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_contact_ActivityParties")]
-		public NEACCOMPAGNEMENTCRM.Common.depne_contact depne_contact_ActivityParties
+		public depne_contact depne_contact_ActivityParties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_contact>("depne_contact_ActivityParties", null);
+				return this.GetRelatedEntity<depne_contact>("depne_contact_ActivityParties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_contact_ActivityParties");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_contact>("depne_contact_ActivityParties", null, value);
+				this.SetRelatedEntity<depne_contact>("depne_contact_ActivityParties", null, value);
 				this.OnPropertyChanged("depne_contact_ActivityParties");
 			}
 		}
@@ -4373,18 +4373,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("partyid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_responsables_ActivityParties")]
-		public NEACCOMPAGNEMENTCRM.Common.depne_responsables depne_responsables_ActivityParties
+		public depne_responsables depne_responsables_ActivityParties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("depne_responsables_ActivityParties", null);
+				return this.GetRelatedEntity<depne_responsables>("depne_responsables_ActivityParties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_responsables_ActivityParties");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("depne_responsables_ActivityParties", null, value);
+				this.SetRelatedEntity<depne_responsables>("depne_responsables_ActivityParties", null, value);
 				this.OnPropertyChanged("depne_responsables_ActivityParties");
 			}
 		}
@@ -4394,18 +4394,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("activityid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("email_activity_parties")]
-		public NEACCOMPAGNEMENTCRM.Common.Email email_activity_parties
+		public Email email_activity_parties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Email>("email_activity_parties", null);
+				return this.GetRelatedEntity<Email>("email_activity_parties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("email_activity_parties");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Email>("email_activity_parties", null, value);
+				this.SetRelatedEntity<Email>("email_activity_parties", null, value);
 				this.OnPropertyChanged("email_activity_parties");
 			}
 		}
@@ -4415,18 +4415,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("partyid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_activity_parties")]
-		public NEACCOMPAGNEMENTCRM.Common.Incident incident_activity_parties
+		public Incident incident_activity_parties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_activity_parties", null);
+				return this.GetRelatedEntity<Incident>("incident_activity_parties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("incident_activity_parties");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_activity_parties", null, value);
+				this.SetRelatedEntity<Incident>("incident_activity_parties", null, value);
 				this.OnPropertyChanged("incident_activity_parties");
 			}
 		}
@@ -4436,18 +4436,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("partyid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("system_user_activity_parties")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser system_user_activity_parties
+		public SystemUser system_user_activity_parties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("system_user_activity_parties", null);
+				return this.GetRelatedEntity<SystemUser>("system_user_activity_parties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("system_user_activity_parties");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("system_user_activity_parties", null, value);
+				this.SetRelatedEntity<SystemUser>("system_user_activity_parties", null, value);
 				this.OnPropertyChanged("system_user_activity_parties");
 			}
 		}
@@ -8694,7 +8694,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Shows whether the contact is active or inactive. Inactive contacts are read-only and can't be edited unless they are reactivated.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecode")]
-		public System.Nullable<NEACCOMPAGNEMENTCRM.Common.ContactState> StateCode
+		public System.Nullable<ContactState> StateCode
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -8702,7 +8702,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("statecode");
 				if ((optionSet != null))
 				{
-					return ((NEACCOMPAGNEMENTCRM.Common.ContactState)(System.Enum.ToObject(typeof(NEACCOMPAGNEMENTCRM.Common.ContactState), optionSet.Value)));
+					return ((ContactState)(System.Enum.ToObject(typeof(ContactState), optionSet.Value)));
 				}
 				else
 				{
@@ -9088,18 +9088,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N account_primary_contact
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("account_primary_contact")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> account_primary_contact
+		public System.Collections.Generic.IEnumerable<Account> account_primary_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("account_primary_contact", null);
+				return this.GetRelatedEntities<Account>("account_primary_contact", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("account_primary_contact");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("account_primary_contact", null, value);
+				this.SetRelatedEntities<Account>("account_primary_contact", null, value);
 				this.OnPropertyChanged("account_primary_contact");
 			}
 		}
@@ -9108,18 +9108,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N contact_activity_parties
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_activity_parties")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> contact_activity_parties
+		public System.Collections.Generic.IEnumerable<ActivityParty> contact_activity_parties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("contact_activity_parties", null);
+				return this.GetRelatedEntities<ActivityParty>("contact_activity_parties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("contact_activity_parties");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("contact_activity_parties", null, value);
+				this.SetRelatedEntities<ActivityParty>("contact_activity_parties", null, value);
 				this.OnPropertyChanged("contact_activity_parties");
 			}
 		}
@@ -9128,18 +9128,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N contact_as_primary_contact
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_as_primary_contact")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> contact_as_primary_contact
+		public System.Collections.Generic.IEnumerable<Incident> contact_as_primary_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("contact_as_primary_contact", null);
+				return this.GetRelatedEntities<Incident>("contact_as_primary_contact", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("contact_as_primary_contact");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("contact_as_primary_contact", null, value);
+				this.SetRelatedEntities<Incident>("contact_as_primary_contact", null, value);
 				this.OnPropertyChanged("contact_as_primary_contact");
 			}
 		}
@@ -9148,18 +9148,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N contact_as_responsible_contact
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_as_responsible_contact")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> contact_as_responsible_contact
+		public System.Collections.Generic.IEnumerable<Incident> contact_as_responsible_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("contact_as_responsible_contact", null);
+				return this.GetRelatedEntities<Incident>("contact_as_responsible_contact", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("contact_as_responsible_contact");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("contact_as_responsible_contact", null, value);
+				this.SetRelatedEntities<Incident>("contact_as_responsible_contact", null, value);
 				this.OnPropertyChanged("contact_as_responsible_contact");
 			}
 		}
@@ -9168,18 +9168,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N contact_customer_contacts
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_customer_contacts", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> Referencedcontact_customer_contacts
+		public System.Collections.Generic.IEnumerable<Contact> Referencedcontact_customer_contacts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_customer_contacts", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<Contact>("contact_customer_contacts", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedcontact_customer_contacts");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_customer_contacts", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<Contact>("contact_customer_contacts", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedcontact_customer_contacts");
 			}
 		}
@@ -9188,18 +9188,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N Contact_Email_EmailSender
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Contact_Email_EmailSender")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> Contact_Email_EmailSender
+		public System.Collections.Generic.IEnumerable<Email> Contact_Email_EmailSender
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Contact_Email_EmailSender", null);
+				return this.GetRelatedEntities<Email>("Contact_Email_EmailSender", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Contact_Email_EmailSender");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Contact_Email_EmailSender", null, value);
+				this.SetRelatedEntities<Email>("Contact_Email_EmailSender", null, value);
 				this.OnPropertyChanged("Contact_Email_EmailSender");
 			}
 		}
@@ -9208,18 +9208,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N Contact_Emails
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Contact_Emails")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> Contact_Emails
+		public System.Collections.Generic.IEnumerable<Email> Contact_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Contact_Emails", null);
+				return this.GetRelatedEntities<Email>("Contact_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Contact_Emails");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Contact_Emails", null, value);
+				this.SetRelatedEntities<Email>("Contact_Emails", null, value);
 				this.OnPropertyChanged("Contact_Emails");
 			}
 		}
@@ -9228,18 +9228,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N contact_master_contact
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_master_contact", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> Referencedcontact_master_contact
+		public System.Collections.Generic.IEnumerable<Contact> Referencedcontact_master_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_master_contact", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<Contact>("contact_master_contact", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedcontact_master_contact");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_master_contact", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<Contact>("contact_master_contact", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedcontact_master_contact");
 			}
 		}
@@ -9248,18 +9248,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N incident_customer_contacts
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_customer_contacts")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> incident_customer_contacts
+		public System.Collections.Generic.IEnumerable<Incident> incident_customer_contacts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_customer_contacts", null);
+				return this.GetRelatedEntities<Incident>("incident_customer_contacts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("incident_customer_contacts");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_customer_contacts", null, value);
+				this.SetRelatedEntities<Incident>("incident_customer_contacts", null, value);
 				this.OnPropertyChanged("incident_customer_contacts");
 			}
 		}
@@ -9268,18 +9268,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_account_contact
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_account_contact")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> depne_account_contact
+		public System.Collections.Generic.IEnumerable<Account> depne_account_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("depne_account_contact", null);
+				return this.GetRelatedEntities<Account>("depne_account_contact", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_account_contact");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("depne_account_contact", null, value);
+				this.SetRelatedEntities<Account>("depne_account_contact", null, value);
 				this.OnPropertyChanged("depne_account_contact");
 			}
 		}
@@ -9288,18 +9288,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_contact_contact
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_contact_contact", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> Referencingdepne_contact_contact
+		public System.Collections.Generic.IEnumerable<Contact> Referencingdepne_contact_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("depne_contact_contact", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntities<Contact>("depne_contact_contact", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencingdepne_contact_contact");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("depne_contact_contact", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntities<Contact>("depne_contact_contact", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencingdepne_contact_contact");
 			}
 		}
@@ -9308,18 +9308,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_contact_contact
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_contact_contact", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> Referenceddepne_contact_contact
+		public System.Collections.Generic.IEnumerable<Contact> Referenceddepne_contact_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("depne_contact_contact", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<Contact>("depne_contact_contact", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referenceddepne_contact_contact");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("depne_contact_contact", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<Contact>("depne_contact_contact", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referenceddepne_contact_contact");
 			}
 		}
@@ -9328,18 +9328,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_contact_depne_professionelshp
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_contact_depne_professionelshp")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp> depne_contact_depne_professionelshp
+		public System.Collections.Generic.IEnumerable<depne_professionelshp> depne_contact_depne_professionelshp
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_contact_depne_professionelshp", null);
+				return this.GetRelatedEntities<depne_professionelshp>("depne_contact_depne_professionelshp", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_contact_depne_professionelshp");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_contact_depne_professionelshp", null, value);
+				this.SetRelatedEntities<depne_professionelshp>("depne_contact_depne_professionelshp", null, value);
 				this.OnPropertyChanged("depne_contact_depne_professionelshp");
 			}
 		}
@@ -9349,18 +9349,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("parentcustomerid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_customer_accounts")]
-		public NEACCOMPAGNEMENTCRM.Common.Account contact_customer_accounts
+		public Account contact_customer_accounts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("contact_customer_accounts", null);
+				return this.GetRelatedEntity<Account>("contact_customer_accounts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("contact_customer_accounts");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("contact_customer_accounts", null, value);
+				this.SetRelatedEntity<Account>("contact_customer_accounts", null, value);
 				this.OnPropertyChanged("contact_customer_accounts");
 			}
 		}
@@ -9370,18 +9370,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("parentcustomerid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_customer_contacts", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.Contact Referencingcontact_customer_contacts
+		public Contact Referencingcontact_customer_contacts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_customer_contacts", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<Contact>("contact_customer_contacts", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencingcontact_customer_contacts");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_customer_contacts", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntity<Contact>("contact_customer_contacts", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencingcontact_customer_contacts");
 			}
 		}
@@ -9391,12 +9391,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("masterid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_master_contact", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.Contact Referencingcontact_master_contact
+		public Contact Referencingcontact_master_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_master_contact", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<Contact>("contact_master_contact", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 		}
 		
@@ -9405,12 +9405,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owninguser")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_owning_user")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser contact_owning_user
+		public SystemUser contact_owning_user
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("contact_owning_user", null);
+				return this.GetRelatedEntity<SystemUser>("contact_owning_user", null);
 			}
 		}
 		
@@ -9419,18 +9419,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_contact_createdonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_contact_createdonbehalfby
+		public SystemUser lk_contact_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_contact_createdonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_contact_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_contact_createdonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_contact_createdonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_contact_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_contact_createdonbehalfby");
 			}
 		}
@@ -9440,18 +9440,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_contact_modifiedonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_contact_modifiedonbehalfby
+		public SystemUser lk_contact_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_contact_modifiedonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_contact_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_contact_modifiedonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_contact_modifiedonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_contact_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_contact_modifiedonbehalfby");
 			}
 		}
@@ -9461,12 +9461,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_contactbase_createdby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_contactbase_createdby
+		public SystemUser lk_contactbase_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_contactbase_createdby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_contactbase_createdby", null);
 			}
 		}
 		
@@ -9475,12 +9475,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_contactbase_modifiedby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_contactbase_modifiedby
+		public SystemUser lk_contactbase_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_contactbase_modifiedby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_contactbase_modifiedby", null);
 			}
 		}
 		
@@ -9489,18 +9489,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("preferredsystemuserid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("system_user_contacts")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser system_user_contacts
+		public SystemUser system_user_contacts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("system_user_contacts", null);
+				return this.GetRelatedEntity<SystemUser>("system_user_contacts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("system_user_contacts");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("system_user_contacts", null, value);
+				this.SetRelatedEntity<SystemUser>("system_user_contacts", null, value);
 				this.OnPropertyChanged("system_user_contacts");
 			}
 		}
@@ -10038,7 +10038,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Statut de l'élément Contact
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecode")]
-		public System.Nullable<NEACCOMPAGNEMENTCRM.Common.depne_contactState> StateCode
+		public System.Nullable<depne_contactState> StateCode
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -10046,7 +10046,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("statecode");
 				if ((optionSet != null))
 				{
-					return ((NEACCOMPAGNEMENTCRM.Common.depne_contactState)(System.Enum.ToObject(typeof(NEACCOMPAGNEMENTCRM.Common.depne_contactState), optionSet.Value)));
+					return ((depne_contactState)(System.Enum.ToObject(typeof(depne_contactState), optionSet.Value)));
 				}
 				else
 				{
@@ -10146,18 +10146,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N depne_contact_ActivityParties
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_contact_ActivityParties")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> depne_contact_ActivityParties
+		public System.Collections.Generic.IEnumerable<ActivityParty> depne_contact_ActivityParties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("depne_contact_ActivityParties", null);
+				return this.GetRelatedEntities<ActivityParty>("depne_contact_ActivityParties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_contact_ActivityParties");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("depne_contact_ActivityParties", null, value);
+				this.SetRelatedEntities<ActivityParty>("depne_contact_ActivityParties", null, value);
 				this.OnPropertyChanged("depne_contact_ActivityParties");
 			}
 		}
@@ -10166,18 +10166,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N depne_contact_Emails
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_contact_Emails")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> depne_contact_Emails
+		public System.Collections.Generic.IEnumerable<Email> depne_contact_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("depne_contact_Emails", null);
+				return this.GetRelatedEntities<Email>("depne_contact_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_contact_Emails");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("depne_contact_Emails", null, value);
+				this.SetRelatedEntities<Email>("depne_contact_Emails", null, value);
 				this.OnPropertyChanged("depne_contact_Emails");
 			}
 		}
@@ -10186,18 +10186,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N depne_depne_contact_incident_Contactdemande
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_depne_contact_incident_Contactdemande")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> depne_depne_contact_incident_Contactdemande
+		public System.Collections.Generic.IEnumerable<Incident> depne_depne_contact_incident_Contactdemande
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("depne_depne_contact_incident_Contactdemande", null);
+				return this.GetRelatedEntities<Incident>("depne_depne_contact_incident_Contactdemande", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_depne_contact_incident_Contactdemande");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("depne_depne_contact_incident_Contactdemande", null, value);
+				this.SetRelatedEntities<Incident>("depne_depne_contact_incident_Contactdemande", null, value);
 				this.OnPropertyChanged("depne_depne_contact_incident_Contactdemande");
 			}
 		}
@@ -10207,12 +10207,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_contact_createdby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_contact_createdby
+		public SystemUser lk_depne_contact_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_contact_createdby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_contact_createdby", null);
 			}
 		}
 		
@@ -10221,18 +10221,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_contact_createdonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_contact_createdonbehalfby
+		public SystemUser lk_depne_contact_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_contact_createdonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_contact_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_contact_createdonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_contact_createdonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_depne_contact_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_contact_createdonbehalfby");
 			}
 		}
@@ -10242,12 +10242,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_contact_modifiedby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_contact_modifiedby
+		public SystemUser lk_depne_contact_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_contact_modifiedby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_contact_modifiedby", null);
 			}
 		}
 		
@@ -10256,18 +10256,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_contact_modifiedonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_contact_modifiedonbehalfby
+		public SystemUser lk_depne_contact_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_contact_modifiedonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_contact_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_contact_modifiedonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_contact_modifiedonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_depne_contact_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_contact_modifiedonbehalfby");
 			}
 		}
@@ -10938,7 +10938,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Statut de l'élément Professionels HP
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecode")]
-		public System.Nullable<NEACCOMPAGNEMENTCRM.Common.depne_professionelshpState> StateCode
+		public System.Nullable<depne_professionelshpState> StateCode
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -10946,7 +10946,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("statecode");
 				if ((optionSet != null))
 				{
-					return ((NEACCOMPAGNEMENTCRM.Common.depne_professionelshpState)(System.Enum.ToObject(typeof(NEACCOMPAGNEMENTCRM.Common.depne_professionelshpState), optionSet.Value)));
+					return ((depne_professionelshpState)(System.Enum.ToObject(typeof(depne_professionelshpState), optionSet.Value)));
 				}
 				else
 				{
@@ -11046,18 +11046,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N depne_depne_professionelshp_incident_Professioneldesante
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_depne_professionelshp_incident_Professioneldesante")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> depne_depne_professionelshp_incident_Professioneldesante
+		public System.Collections.Generic.IEnumerable<Incident> depne_depne_professionelshp_incident_Professioneldesante
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("depne_depne_professionelshp_incident_Professioneldesante", null);
+				return this.GetRelatedEntities<Incident>("depne_depne_professionelshp_incident_Professioneldesante", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_depne_professionelshp_incident_Professioneldesante");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("depne_depne_professionelshp_incident_Professioneldesante", null, value);
+				this.SetRelatedEntities<Incident>("depne_depne_professionelshp_incident_Professioneldesante", null, value);
 				this.OnPropertyChanged("depne_depne_professionelshp_incident_Professioneldesante");
 			}
 		}
@@ -11066,18 +11066,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N depne_professionelshp_Emails
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_professionelshp_Emails")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> depne_professionelshp_Emails
+		public System.Collections.Generic.IEnumerable<Email> depne_professionelshp_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("depne_professionelshp_Emails", null);
+				return this.GetRelatedEntities<Email>("depne_professionelshp_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_professionelshp_Emails");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("depne_professionelshp_Emails", null, value);
+				this.SetRelatedEntities<Email>("depne_professionelshp_Emails", null, value);
 				this.OnPropertyChanged("depne_professionelshp_Emails");
 			}
 		}
@@ -11086,18 +11086,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_account_depne_professionelshp
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_account_depne_professionelshp")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> depne_account_depne_professionelshp
+		public System.Collections.Generic.IEnumerable<Account> depne_account_depne_professionelshp
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("depne_account_depne_professionelshp", null);
+				return this.GetRelatedEntities<Account>("depne_account_depne_professionelshp", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_account_depne_professionelshp");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("depne_account_depne_professionelshp", null, value);
+				this.SetRelatedEntities<Account>("depne_account_depne_professionelshp", null, value);
 				this.OnPropertyChanged("depne_account_depne_professionelshp");
 			}
 		}
@@ -11106,18 +11106,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_contact_depne_professionelshp
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_contact_depne_professionelshp")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> depne_contact_depne_professionelshp
+		public System.Collections.Generic.IEnumerable<Contact> depne_contact_depne_professionelshp
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("depne_contact_depne_professionelshp", null);
+				return this.GetRelatedEntities<Contact>("depne_contact_depne_professionelshp", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_contact_depne_professionelshp");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("depne_contact_depne_professionelshp", null, value);
+				this.SetRelatedEntities<Contact>("depne_contact_depne_professionelshp", null, value);
 				this.OnPropertyChanged("depne_contact_depne_professionelshp");
 			}
 		}
@@ -11126,18 +11126,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_depne_professionelshp_depne_professionels
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_depne_professionelshp_depne_professionels", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp> Referencingdepne_depne_professionelshp_depne_professionels
+		public System.Collections.Generic.IEnumerable<depne_professionelshp> Referencingdepne_depne_professionelshp_depne_professionels
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_depne_professionelshp_depne_professionels", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntities<depne_professionelshp>("depne_depne_professionelshp_depne_professionels", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencingdepne_depne_professionelshp_depne_professionels");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_depne_professionelshp_depne_professionels", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntities<depne_professionelshp>("depne_depne_professionelshp_depne_professionels", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencingdepne_depne_professionelshp_depne_professionels");
 			}
 		}
@@ -11146,18 +11146,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_depne_professionelshp_depne_professionels
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_depne_professionelshp_depne_professionels", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp> Referenceddepne_depne_professionelshp_depne_professionels
+		public System.Collections.Generic.IEnumerable<depne_professionelshp> Referenceddepne_depne_professionelshp_depne_professionels
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_depne_professionelshp_depne_professionels", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<depne_professionelshp>("depne_depne_professionelshp_depne_professionels", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referenceddepne_depne_professionelshp_depne_professionels");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_depne_professionelshp_depne_professionels", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<depne_professionelshp>("depne_depne_professionelshp_depne_professionels", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referenceddepne_depne_professionelshp_depne_professionels");
 			}
 		}
@@ -11167,12 +11167,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_professionelshp_createdby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_professionelshp_createdby
+		public SystemUser lk_depne_professionelshp_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_professionelshp_createdby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_professionelshp_createdby", null);
 			}
 		}
 		
@@ -11181,18 +11181,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_professionelshp_createdonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_professionelshp_createdonbehalfby
+		public SystemUser lk_depne_professionelshp_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_professionelshp_createdonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_professionelshp_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_professionelshp_createdonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_professionelshp_createdonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_depne_professionelshp_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_professionelshp_createdonbehalfby");
 			}
 		}
@@ -11202,12 +11202,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_professionelshp_modifiedby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_professionelshp_modifiedby
+		public SystemUser lk_depne_professionelshp_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_professionelshp_modifiedby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_professionelshp_modifiedby", null);
 			}
 		}
 		
@@ -11216,18 +11216,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_professionelshp_modifiedonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_professionelshp_modifiedonbehalfby
+		public SystemUser lk_depne_professionelshp_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_professionelshp_modifiedonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_professionelshp_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_professionelshp_modifiedonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_professionelshp_modifiedonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_depne_professionelshp_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_professionelshp_modifiedonbehalfby");
 			}
 		}
@@ -11770,7 +11770,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Statut de l'élément Responsable
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecode")]
-		public System.Nullable<NEACCOMPAGNEMENTCRM.Common.depne_responsablesState> StateCode
+		public System.Nullable<depne_responsablesState> StateCode
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -11778,7 +11778,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("statecode");
 				if ((optionSet != null))
 				{
-					return ((NEACCOMPAGNEMENTCRM.Common.depne_responsablesState)(System.Enum.ToObject(typeof(NEACCOMPAGNEMENTCRM.Common.depne_responsablesState), optionSet.Value)));
+					return ((depne_responsablesState)(System.Enum.ToObject(typeof(depne_responsablesState), optionSet.Value)));
 				}
 				else
 				{
@@ -11878,18 +11878,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N depne_depne_responsables_incident_Responsabledemande
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_depne_responsables_incident_Responsabledemande")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> depne_depne_responsables_incident_Responsabledemande
+		public System.Collections.Generic.IEnumerable<Incident> depne_depne_responsables_incident_Responsabledemande
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("depne_depne_responsables_incident_Responsabledemande", null);
+				return this.GetRelatedEntities<Incident>("depne_depne_responsables_incident_Responsabledemande", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_depne_responsables_incident_Responsabledemande");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("depne_depne_responsables_incident_Responsabledemande", null, value);
+				this.SetRelatedEntities<Incident>("depne_depne_responsables_incident_Responsabledemande", null, value);
 				this.OnPropertyChanged("depne_depne_responsables_incident_Responsabledemande");
 			}
 		}
@@ -11898,18 +11898,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N depne_responsables_ActivityParties
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_responsables_ActivityParties")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> depne_responsables_ActivityParties
+		public System.Collections.Generic.IEnumerable<ActivityParty> depne_responsables_ActivityParties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("depne_responsables_ActivityParties", null);
+				return this.GetRelatedEntities<ActivityParty>("depne_responsables_ActivityParties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_responsables_ActivityParties");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("depne_responsables_ActivityParties", null, value);
+				this.SetRelatedEntities<ActivityParty>("depne_responsables_ActivityParties", null, value);
 				this.OnPropertyChanged("depne_responsables_ActivityParties");
 			}
 		}
@@ -11918,18 +11918,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N depne_responsables_Emails
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_responsables_Emails")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> depne_responsables_Emails
+		public System.Collections.Generic.IEnumerable<Email> depne_responsables_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("depne_responsables_Emails", null);
+				return this.GetRelatedEntities<Email>("depne_responsables_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_responsables_Emails");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("depne_responsables_Emails", null, value);
+				this.SetRelatedEntities<Email>("depne_responsables_Emails", null, value);
 				this.OnPropertyChanged("depne_responsables_Emails");
 			}
 		}
@@ -11938,18 +11938,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// N:N depne_depne_responsables_account
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_depne_responsables_account")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> depne_depne_responsables_account
+		public System.Collections.Generic.IEnumerable<Account> depne_depne_responsables_account
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("depne_depne_responsables_account", null);
+				return this.GetRelatedEntities<Account>("depne_depne_responsables_account", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_depne_responsables_account");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("depne_depne_responsables_account", null, value);
+				this.SetRelatedEntities<Account>("depne_depne_responsables_account", null, value);
 				this.OnPropertyChanged("depne_depne_responsables_account");
 			}
 		}
@@ -11959,12 +11959,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_responsables_createdby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_responsables_createdby
+		public SystemUser lk_depne_responsables_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_responsables_createdby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_responsables_createdby", null);
 			}
 		}
 		
@@ -11973,18 +11973,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_responsables_createdonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_responsables_createdonbehalfby
+		public SystemUser lk_depne_responsables_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_responsables_createdonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_responsables_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_responsables_createdonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_responsables_createdonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_depne_responsables_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_responsables_createdonbehalfby");
 			}
 		}
@@ -11994,12 +11994,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_responsables_modifiedby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_responsables_modifiedby
+		public SystemUser lk_depne_responsables_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_responsables_modifiedby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_responsables_modifiedby", null);
 			}
 		}
 		
@@ -12008,18 +12008,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_responsables_modifiedonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_depne_responsables_modifiedonbehalfby
+		public SystemUser lk_depne_responsables_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_responsables_modifiedonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_depne_responsables_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_responsables_modifiedonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_depne_responsables_modifiedonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_depne_responsables_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_responsables_modifiedonbehalfby");
 			}
 		}
@@ -12444,7 +12444,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Enter the recipients that are included on the email distribution, but are not displayed to other recipients.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("bcc")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> Bcc
+		public System.Collections.Generic.IEnumerable<ActivityParty> Bcc
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -12453,7 +12453,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				if (((collection != null) 
 							&& (collection.Entities != null)))
 				{
-					return System.Linq.Enumerable.Select<Microsoft.Xrm.Sdk.Entity, NEACCOMPAGNEMENTCRM.Common.ActivityParty>(collection.Entities, e => e.ToEntity<NEACCOMPAGNEMENTCRM.Common.ActivityParty>());
+					return System.Linq.Enumerable.Select<Microsoft.Xrm.Sdk.Entity, ActivityParty>(collection.Entities, e => e.ToEntity<ActivityParty>());
 				}
 				else
 				{
@@ -12500,7 +12500,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Enter the recipients that should be copied on the email.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cc")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> Cc
+		public System.Collections.Generic.IEnumerable<ActivityParty> Cc
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -12509,7 +12509,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				if (((collection != null) 
 							&& (collection.Entities != null)))
 				{
-					return System.Linq.Enumerable.Select<Microsoft.Xrm.Sdk.Entity, NEACCOMPAGNEMENTCRM.Common.ActivityParty>(collection.Entities, e => e.ToEntity<NEACCOMPAGNEMENTCRM.Common.ActivityParty>());
+					return System.Linq.Enumerable.Select<Microsoft.Xrm.Sdk.Entity, ActivityParty>(collection.Entities, e => e.ToEntity<ActivityParty>());
 				}
 				else
 				{
@@ -12920,7 +12920,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Enter the sender of the email.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("from")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> From
+		public System.Collections.Generic.IEnumerable<ActivityParty> From
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -12929,7 +12929,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				if (((collection != null) 
 							&& (collection.Entities != null)))
 				{
-					return System.Linq.Enumerable.Select<Microsoft.Xrm.Sdk.Entity, NEACCOMPAGNEMENTCRM.Common.ActivityParty>(collection.Entities, e => e.ToEntity<NEACCOMPAGNEMENTCRM.Common.ActivityParty>());
+					return System.Linq.Enumerable.Select<Microsoft.Xrm.Sdk.Entity, ActivityParty>(collection.Entities, e => e.ToEntity<ActivityParty>());
 				}
 				else
 				{
@@ -13751,7 +13751,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Shows whether the email is open, completed, or canceled. Completed and canceled email is read-only and can't be edited.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecode")]
-		public System.Nullable<NEACCOMPAGNEMENTCRM.Common.EmailState> StateCode
+		public System.Nullable<EmailState> StateCode
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -13759,7 +13759,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("statecode");
 				if ((optionSet != null))
 				{
-					return ((NEACCOMPAGNEMENTCRM.Common.EmailState)(System.Enum.ToObject(typeof(NEACCOMPAGNEMENTCRM.Common.EmailState), optionSet.Value)));
+					return ((EmailState)(System.Enum.ToObject(typeof(EmailState), optionSet.Value)));
 				}
 				else
 				{
@@ -13906,7 +13906,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Enter the account, contact, lead, queue, or user recipients for the email.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("to")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> To
+		public System.Collections.Generic.IEnumerable<ActivityParty> To
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -13915,7 +13915,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				if (((collection != null) 
 							&& (collection.Entities != null)))
 				{
-					return System.Linq.Enumerable.Select<Microsoft.Xrm.Sdk.Entity, NEACCOMPAGNEMENTCRM.Common.ActivityParty>(collection.Entities, e => e.ToEntity<NEACCOMPAGNEMENTCRM.Common.ActivityParty>());
+					return System.Linq.Enumerable.Select<Microsoft.Xrm.Sdk.Entity, ActivityParty>(collection.Entities, e => e.ToEntity<ActivityParty>());
 				}
 				else
 				{
@@ -14055,18 +14055,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N email_activity_parties
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("email_activity_parties")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> email_activity_parties
+		public System.Collections.Generic.IEnumerable<ActivityParty> email_activity_parties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("email_activity_parties", null);
+				return this.GetRelatedEntities<ActivityParty>("email_activity_parties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("email_activity_parties");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("email_activity_parties", null, value);
+				this.SetRelatedEntities<ActivityParty>("email_activity_parties", null, value);
 				this.OnPropertyChanged("email_activity_parties");
 			}
 		}
@@ -14075,18 +14075,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N email_email_CorrelatedActivityId
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("email_email_CorrelatedActivityId", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> Referencedemail_email_CorrelatedActivityId
+		public System.Collections.Generic.IEnumerable<Email> Referencedemail_email_CorrelatedActivityId
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("email_email_CorrelatedActivityId", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<Email>("email_email_CorrelatedActivityId", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedemail_email_CorrelatedActivityId");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("email_email_CorrelatedActivityId", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<Email>("email_email_CorrelatedActivityId", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedemail_email_CorrelatedActivityId");
 			}
 		}
@@ -14095,18 +14095,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N email_email_parentactivityid
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("email_email_parentactivityid", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> Referencedemail_email_parentactivityid
+		public System.Collections.Generic.IEnumerable<Email> Referencedemail_email_parentactivityid
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("email_email_parentactivityid", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<Email>("email_email_parentactivityid", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedemail_email_parentactivityid");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("email_email_parentactivityid", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<Email>("email_email_parentactivityid", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedemail_email_parentactivityid");
 			}
 		}
@@ -14116,12 +14116,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("emailsender")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Account_Email_EmailSender")]
-		public NEACCOMPAGNEMENTCRM.Common.Account Account_Email_EmailSender
+		public Account Account_Email_EmailSender
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("Account_Email_EmailSender", null);
+				return this.GetRelatedEntity<Account>("Account_Email_EmailSender", null);
 			}
 		}
 		
@@ -14130,12 +14130,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("sendersaccount")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Account_Email_SendersAccount")]
-		public NEACCOMPAGNEMENTCRM.Common.Account Account_Email_SendersAccount
+		public Account Account_Email_SendersAccount
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("Account_Email_SendersAccount", null);
+				return this.GetRelatedEntity<Account>("Account_Email_SendersAccount", null);
 			}
 		}
 		
@@ -14144,18 +14144,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("regardingobjectid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Account_Emails")]
-		public NEACCOMPAGNEMENTCRM.Common.Account Account_Emails
+		public Account Account_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("Account_Emails", null);
+				return this.GetRelatedEntity<Account>("Account_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Account_Emails");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("Account_Emails", null, value);
+				this.SetRelatedEntity<Account>("Account_Emails", null, value);
 				this.OnPropertyChanged("Account_Emails");
 			}
 		}
@@ -14165,12 +14165,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("emailsender")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Contact_Email_EmailSender")]
-		public NEACCOMPAGNEMENTCRM.Common.Contact Contact_Email_EmailSender
+		public Contact Contact_Email_EmailSender
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("Contact_Email_EmailSender", null);
+				return this.GetRelatedEntity<Contact>("Contact_Email_EmailSender", null);
 			}
 		}
 		
@@ -14179,18 +14179,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("regardingobjectid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Contact_Emails")]
-		public NEACCOMPAGNEMENTCRM.Common.Contact Contact_Emails
+		public Contact Contact_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("Contact_Emails", null);
+				return this.GetRelatedEntity<Contact>("Contact_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Contact_Emails");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("Contact_Emails", null, value);
+				this.SetRelatedEntity<Contact>("Contact_Emails", null, value);
 				this.OnPropertyChanged("Contact_Emails");
 			}
 		}
@@ -14200,18 +14200,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("regardingobjectid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_contact_Emails")]
-		public NEACCOMPAGNEMENTCRM.Common.depne_contact depne_contact_Emails
+		public depne_contact depne_contact_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_contact>("depne_contact_Emails", null);
+				return this.GetRelatedEntity<depne_contact>("depne_contact_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_contact_Emails");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_contact>("depne_contact_Emails", null, value);
+				this.SetRelatedEntity<depne_contact>("depne_contact_Emails", null, value);
 				this.OnPropertyChanged("depne_contact_Emails");
 			}
 		}
@@ -14221,18 +14221,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("regardingobjectid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_professionelshp_Emails")]
-		public NEACCOMPAGNEMENTCRM.Common.depne_professionelshp depne_professionelshp_Emails
+		public depne_professionelshp depne_professionelshp_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_professionelshp_Emails", null);
+				return this.GetRelatedEntity<depne_professionelshp>("depne_professionelshp_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_professionelshp_Emails");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_professionelshp_Emails", null, value);
+				this.SetRelatedEntity<depne_professionelshp>("depne_professionelshp_Emails", null, value);
 				this.OnPropertyChanged("depne_professionelshp_Emails");
 			}
 		}
@@ -14242,18 +14242,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("regardingobjectid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_responsables_Emails")]
-		public NEACCOMPAGNEMENTCRM.Common.depne_responsables depne_responsables_Emails
+		public depne_responsables depne_responsables_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("depne_responsables_Emails", null);
+				return this.GetRelatedEntity<depne_responsables>("depne_responsables_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_responsables_Emails");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("depne_responsables_Emails", null, value);
+				this.SetRelatedEntity<depne_responsables>("depne_responsables_Emails", null, value);
 				this.OnPropertyChanged("depne_responsables_Emails");
 			}
 		}
@@ -14263,18 +14263,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("correlatedactivityid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("email_email_CorrelatedActivityId", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.Email Referencingemail_email_CorrelatedActivityId
+		public Email Referencingemail_email_CorrelatedActivityId
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Email>("email_email_CorrelatedActivityId", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<Email>("email_email_CorrelatedActivityId", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencingemail_email_CorrelatedActivityId");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Email>("email_email_CorrelatedActivityId", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntity<Email>("email_email_CorrelatedActivityId", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencingemail_email_CorrelatedActivityId");
 			}
 		}
@@ -14284,18 +14284,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("parentactivityid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("email_email_parentactivityid", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.Email Referencingemail_email_parentactivityid
+		public Email Referencingemail_email_parentactivityid
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Email>("email_email_parentactivityid", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<Email>("email_email_parentactivityid", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencingemail_email_parentactivityid");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Email>("email_email_parentactivityid", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntity<Email>("email_email_parentactivityid", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencingemail_email_parentactivityid");
 			}
 		}
@@ -14305,18 +14305,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("regardingobjectid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Incident_Emails")]
-		public NEACCOMPAGNEMENTCRM.Common.Incident Incident_Emails
+		public Incident Incident_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Incident>("Incident_Emails", null);
+				return this.GetRelatedEntity<Incident>("Incident_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Incident_Emails");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Incident>("Incident_Emails", null, value);
+				this.SetRelatedEntity<Incident>("Incident_Emails", null, value);
 				this.OnPropertyChanged("Incident_Emails");
 			}
 		}
@@ -14326,12 +14326,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_email_createdby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_email_createdby
+		public SystemUser lk_email_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_email_createdby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_email_createdby", null);
 			}
 		}
 		
@@ -14340,18 +14340,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_email_createdonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_email_createdonbehalfby
+		public SystemUser lk_email_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_email_createdonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_email_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_email_createdonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_email_createdonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_email_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_email_createdonbehalfby");
 			}
 		}
@@ -14361,12 +14361,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_email_modifiedby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_email_modifiedby
+		public SystemUser lk_email_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_email_modifiedby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_email_modifiedby", null);
 			}
 		}
 		
@@ -14375,18 +14375,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_email_modifiedonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_email_modifiedonbehalfby
+		public SystemUser lk_email_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_email_modifiedonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_email_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_email_modifiedonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_email_modifiedonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_email_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_email_modifiedonbehalfby");
 			}
 		}
@@ -14396,12 +14396,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("emailsender")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("SystemUser_Email_EmailSender")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser SystemUser_Email_EmailSender
+		public SystemUser SystemUser_Email_EmailSender
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("SystemUser_Email_EmailSender", null);
+				return this.GetRelatedEntity<SystemUser>("SystemUser_Email_EmailSender", null);
 			}
 		}
 		
@@ -14410,12 +14410,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owninguser")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("user_email")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser user_email
+		public SystemUser user_email
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("user_email", null);
+				return this.GetRelatedEntity<SystemUser>("user_email", null);
 			}
 		}
 		
@@ -16127,7 +16127,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// Shows whether the case is active, resolved, or canceled. Resolved and canceled cases are read-only and can't be edited unless they are reactivated.
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecode")]
-		public System.Nullable<NEACCOMPAGNEMENTCRM.Common.IncidentState> StateCode
+		public System.Nullable<IncidentState> StateCode
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
@@ -16135,7 +16135,7 @@ namespace NEACCOMPAGNEMENTCRM.Common
 				Microsoft.Xrm.Sdk.OptionSetValue optionSet = this.GetAttributeValue<Microsoft.Xrm.Sdk.OptionSetValue>("statecode");
 				if ((optionSet != null))
 				{
-					return ((NEACCOMPAGNEMENTCRM.Common.IncidentState)(System.Enum.ToObject(typeof(NEACCOMPAGNEMENTCRM.Common.IncidentState), optionSet.Value)));
+					return ((IncidentState)(System.Enum.ToObject(typeof(IncidentState), optionSet.Value)));
 				}
 				else
 				{
@@ -16335,18 +16335,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N incident_activity_parties
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_activity_parties")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> incident_activity_parties
+		public System.Collections.Generic.IEnumerable<ActivityParty> incident_activity_parties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("incident_activity_parties", null);
+				return this.GetRelatedEntities<ActivityParty>("incident_activity_parties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("incident_activity_parties");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("incident_activity_parties", null, value);
+				this.SetRelatedEntities<ActivityParty>("incident_activity_parties", null, value);
 				this.OnPropertyChanged("incident_activity_parties");
 			}
 		}
@@ -16355,18 +16355,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N Incident_Emails
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("Incident_Emails")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> Incident_Emails
+		public System.Collections.Generic.IEnumerable<Email> Incident_Emails
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Incident_Emails", null);
+				return this.GetRelatedEntities<Email>("Incident_Emails", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Incident_Emails");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("Incident_Emails", null, value);
+				this.SetRelatedEntities<Email>("Incident_Emails", null, value);
 				this.OnPropertyChanged("Incident_Emails");
 			}
 		}
@@ -16375,18 +16375,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N incident_existingcase
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_existingcase", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> Referencedincident_existingcase
+		public System.Collections.Generic.IEnumerable<Incident> Referencedincident_existingcase
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_existingcase", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<Incident>("incident_existingcase", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedincident_existingcase");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_existingcase", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<Incident>("incident_existingcase", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedincident_existingcase");
 			}
 		}
@@ -16395,18 +16395,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N incident_master_incident
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_master_incident", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> Referencedincident_master_incident
+		public System.Collections.Generic.IEnumerable<Incident> Referencedincident_master_incident
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_master_incident", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<Incident>("incident_master_incident", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedincident_master_incident");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_master_incident", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<Incident>("incident_master_incident", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedincident_master_incident");
 			}
 		}
@@ -16415,18 +16415,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N incident_parent_incident
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_parent_incident", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> Referencedincident_parent_incident
+		public System.Collections.Generic.IEnumerable<Incident> Referencedincident_parent_incident
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_parent_incident", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<Incident>("incident_parent_incident", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedincident_parent_incident");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_parent_incident", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<Incident>("incident_parent_incident", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedincident_parent_incident");
 			}
 		}
@@ -16436,18 +16436,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("primarycontactid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_as_primary_contact")]
-		public NEACCOMPAGNEMENTCRM.Common.Contact contact_as_primary_contact
+		public Contact contact_as_primary_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_as_primary_contact", null);
+				return this.GetRelatedEntity<Contact>("contact_as_primary_contact", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("contact_as_primary_contact");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_as_primary_contact", null, value);
+				this.SetRelatedEntity<Contact>("contact_as_primary_contact", null, value);
 				this.OnPropertyChanged("contact_as_primary_contact");
 			}
 		}
@@ -16457,18 +16457,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("responsiblecontactid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_as_responsible_contact")]
-		public NEACCOMPAGNEMENTCRM.Common.Contact contact_as_responsible_contact
+		public Contact contact_as_responsible_contact
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_as_responsible_contact", null);
+				return this.GetRelatedEntity<Contact>("contact_as_responsible_contact", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("contact_as_responsible_contact");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_as_responsible_contact", null, value);
+				this.SetRelatedEntity<Contact>("contact_as_responsible_contact", null, value);
 				this.OnPropertyChanged("contact_as_responsible_contact");
 			}
 		}
@@ -16478,18 +16478,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("depne_contactdemande")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_depne_contact_incident_Contactdemande")]
-		public NEACCOMPAGNEMENTCRM.Common.depne_contact depne_depne_contact_incident_Contactdemande
+		public depne_contact depne_depne_contact_incident_Contactdemande
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_contact>("depne_depne_contact_incident_Contactdemande", null);
+				return this.GetRelatedEntity<depne_contact>("depne_depne_contact_incident_Contactdemande", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_depne_contact_incident_Contactdemande");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_contact>("depne_depne_contact_incident_Contactdemande", null, value);
+				this.SetRelatedEntity<depne_contact>("depne_depne_contact_incident_Contactdemande", null, value);
 				this.OnPropertyChanged("depne_depne_contact_incident_Contactdemande");
 			}
 		}
@@ -16499,18 +16499,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("depne_professioneldesante")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_depne_professionelshp_incident_Professioneldesante")]
-		public NEACCOMPAGNEMENTCRM.Common.depne_professionelshp depne_depne_professionelshp_incident_Professioneldesante
+		public depne_professionelshp depne_depne_professionelshp_incident_Professioneldesante
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_depne_professionelshp_incident_Professioneldesante", null);
+				return this.GetRelatedEntity<depne_professionelshp>("depne_depne_professionelshp_incident_Professioneldesante", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_depne_professionelshp_incident_Professioneldesante");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("depne_depne_professionelshp_incident_Professioneldesante", null, value);
+				this.SetRelatedEntity<depne_professionelshp>("depne_depne_professionelshp_incident_Professioneldesante", null, value);
 				this.OnPropertyChanged("depne_depne_professionelshp_incident_Professioneldesante");
 			}
 		}
@@ -16520,18 +16520,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("depne_responsabledemande")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("depne_depne_responsables_incident_Responsabledemande")]
-		public NEACCOMPAGNEMENTCRM.Common.depne_responsables depne_depne_responsables_incident_Responsabledemande
+		public depne_responsables depne_depne_responsables_incident_Responsabledemande
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("depne_depne_responsables_incident_Responsabledemande", null);
+				return this.GetRelatedEntity<depne_responsables>("depne_depne_responsables_incident_Responsabledemande", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("depne_depne_responsables_incident_Responsabledemande");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("depne_depne_responsables_incident_Responsabledemande", null, value);
+				this.SetRelatedEntity<depne_responsables>("depne_depne_responsables_incident_Responsabledemande", null, value);
 				this.OnPropertyChanged("depne_depne_responsables_incident_Responsabledemande");
 			}
 		}
@@ -16541,18 +16541,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("customerid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_customer_accounts")]
-		public NEACCOMPAGNEMENTCRM.Common.Account incident_customer_accounts
+		public Account incident_customer_accounts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("incident_customer_accounts", null);
+				return this.GetRelatedEntity<Account>("incident_customer_accounts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("incident_customer_accounts");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Account>("incident_customer_accounts", null, value);
+				this.SetRelatedEntity<Account>("incident_customer_accounts", null, value);
 				this.OnPropertyChanged("incident_customer_accounts");
 			}
 		}
@@ -16562,18 +16562,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("customerid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_customer_contacts")]
-		public NEACCOMPAGNEMENTCRM.Common.Contact incident_customer_contacts
+		public Contact incident_customer_contacts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("incident_customer_contacts", null);
+				return this.GetRelatedEntity<Contact>("incident_customer_contacts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("incident_customer_contacts");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Contact>("incident_customer_contacts", null, value);
+				this.SetRelatedEntity<Contact>("incident_customer_contacts", null, value);
 				this.OnPropertyChanged("incident_customer_contacts");
 			}
 		}
@@ -16583,18 +16583,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("existingcase")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_existingcase", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.Incident Referencingincident_existingcase
+		public Incident Referencingincident_existingcase
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_existingcase", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<Incident>("incident_existingcase", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencingincident_existingcase");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_existingcase", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntity<Incident>("incident_existingcase", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencingincident_existingcase");
 			}
 		}
@@ -16604,18 +16604,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("masterid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_master_incident", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.Incident Referencingincident_master_incident
+		public Incident Referencingincident_master_incident
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_master_incident", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<Incident>("incident_master_incident", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencingincident_master_incident");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_master_incident", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntity<Incident>("incident_master_incident", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencingincident_master_incident");
 			}
 		}
@@ -16625,18 +16625,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("parentcaseid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("incident_parent_incident", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.Incident Referencingincident_parent_incident
+		public Incident Referencingincident_parent_incident
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_parent_incident", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<Incident>("incident_parent_incident", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencingincident_parent_incident");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.Incident>("incident_parent_incident", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntity<Incident>("incident_parent_incident", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencingincident_parent_incident");
 			}
 		}
@@ -16646,12 +16646,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_incidentbase_createdby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_incidentbase_createdby
+		public SystemUser lk_incidentbase_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_incidentbase_createdby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_incidentbase_createdby", null);
 			}
 		}
 		
@@ -16660,18 +16660,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_incidentbase_createdonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_incidentbase_createdonbehalfby
+		public SystemUser lk_incidentbase_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_incidentbase_createdonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_incidentbase_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_incidentbase_createdonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_incidentbase_createdonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_incidentbase_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_incidentbase_createdonbehalfby");
 			}
 		}
@@ -16681,12 +16681,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_incidentbase_modifiedby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_incidentbase_modifiedby
+		public SystemUser lk_incidentbase_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_incidentbase_modifiedby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_incidentbase_modifiedby", null);
 			}
 		}
 		
@@ -16695,18 +16695,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_incidentbase_modifiedonbehalfby")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser lk_incidentbase_modifiedonbehalfby
+		public SystemUser lk_incidentbase_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_incidentbase_modifiedonbehalfby", null);
+				return this.GetRelatedEntity<SystemUser>("lk_incidentbase_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_incidentbase_modifiedonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_incidentbase_modifiedonbehalfby", null, value);
+				this.SetRelatedEntity<SystemUser>("lk_incidentbase_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_incidentbase_modifiedonbehalfby");
 			}
 		}
@@ -16716,12 +16716,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owninguser")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("system_user_incidents")]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser system_user_incidents
+		public SystemUser system_user_incidents
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("system_user_incidents", null);
+				return this.GetRelatedEntity<SystemUser>("system_user_incidents", null);
 			}
 		}
 		
@@ -19406,18 +19406,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N contact_owning_user
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("contact_owning_user")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> contact_owning_user
+		public System.Collections.Generic.IEnumerable<Contact> contact_owning_user
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_owning_user", null);
+				return this.GetRelatedEntities<Contact>("contact_owning_user", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("contact_owning_user");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("contact_owning_user", null, value);
+				this.SetRelatedEntities<Contact>("contact_owning_user", null, value);
 				this.OnPropertyChanged("contact_owning_user");
 			}
 		}
@@ -19426,18 +19426,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_accountbase_createdby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_accountbase_createdby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> lk_accountbase_createdby
+		public System.Collections.Generic.IEnumerable<Account> lk_accountbase_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("lk_accountbase_createdby", null);
+				return this.GetRelatedEntities<Account>("lk_accountbase_createdby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_accountbase_createdby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("lk_accountbase_createdby", null, value);
+				this.SetRelatedEntities<Account>("lk_accountbase_createdby", null, value);
 				this.OnPropertyChanged("lk_accountbase_createdby");
 			}
 		}
@@ -19446,18 +19446,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_accountbase_createdonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_accountbase_createdonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> lk_accountbase_createdonbehalfby
+		public System.Collections.Generic.IEnumerable<Account> lk_accountbase_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("lk_accountbase_createdonbehalfby", null);
+				return this.GetRelatedEntities<Account>("lk_accountbase_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_accountbase_createdonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("lk_accountbase_createdonbehalfby", null, value);
+				this.SetRelatedEntities<Account>("lk_accountbase_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_accountbase_createdonbehalfby");
 			}
 		}
@@ -19466,18 +19466,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_accountbase_modifiedby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_accountbase_modifiedby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> lk_accountbase_modifiedby
+		public System.Collections.Generic.IEnumerable<Account> lk_accountbase_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("lk_accountbase_modifiedby", null);
+				return this.GetRelatedEntities<Account>("lk_accountbase_modifiedby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_accountbase_modifiedby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("lk_accountbase_modifiedby", null, value);
+				this.SetRelatedEntities<Account>("lk_accountbase_modifiedby", null, value);
 				this.OnPropertyChanged("lk_accountbase_modifiedby");
 			}
 		}
@@ -19486,18 +19486,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_accountbase_modifiedonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_accountbase_modifiedonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> lk_accountbase_modifiedonbehalfby
+		public System.Collections.Generic.IEnumerable<Account> lk_accountbase_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("lk_accountbase_modifiedonbehalfby", null);
+				return this.GetRelatedEntities<Account>("lk_accountbase_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_accountbase_modifiedonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("lk_accountbase_modifiedonbehalfby", null, value);
+				this.SetRelatedEntities<Account>("lk_accountbase_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_accountbase_modifiedonbehalfby");
 			}
 		}
@@ -19506,18 +19506,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_contact_createdonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_contact_createdonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> lk_contact_createdonbehalfby
+		public System.Collections.Generic.IEnumerable<Contact> lk_contact_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("lk_contact_createdonbehalfby", null);
+				return this.GetRelatedEntities<Contact>("lk_contact_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_contact_createdonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("lk_contact_createdonbehalfby", null, value);
+				this.SetRelatedEntities<Contact>("lk_contact_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_contact_createdonbehalfby");
 			}
 		}
@@ -19526,18 +19526,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_contact_modifiedonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_contact_modifiedonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> lk_contact_modifiedonbehalfby
+		public System.Collections.Generic.IEnumerable<Contact> lk_contact_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("lk_contact_modifiedonbehalfby", null);
+				return this.GetRelatedEntities<Contact>("lk_contact_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_contact_modifiedonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("lk_contact_modifiedonbehalfby", null, value);
+				this.SetRelatedEntities<Contact>("lk_contact_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_contact_modifiedonbehalfby");
 			}
 		}
@@ -19546,18 +19546,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_contactbase_createdby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_contactbase_createdby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> lk_contactbase_createdby
+		public System.Collections.Generic.IEnumerable<Contact> lk_contactbase_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("lk_contactbase_createdby", null);
+				return this.GetRelatedEntities<Contact>("lk_contactbase_createdby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_contactbase_createdby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("lk_contactbase_createdby", null, value);
+				this.SetRelatedEntities<Contact>("lk_contactbase_createdby", null, value);
 				this.OnPropertyChanged("lk_contactbase_createdby");
 			}
 		}
@@ -19566,18 +19566,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_contactbase_modifiedby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_contactbase_modifiedby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> lk_contactbase_modifiedby
+		public System.Collections.Generic.IEnumerable<Contact> lk_contactbase_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("lk_contactbase_modifiedby", null);
+				return this.GetRelatedEntities<Contact>("lk_contactbase_modifiedby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_contactbase_modifiedby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("lk_contactbase_modifiedby", null, value);
+				this.SetRelatedEntities<Contact>("lk_contactbase_modifiedby", null, value);
 				this.OnPropertyChanged("lk_contactbase_modifiedby");
 			}
 		}
@@ -19586,18 +19586,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_contact_createdby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_contact_createdby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_contact> lk_depne_contact_createdby
+		public System.Collections.Generic.IEnumerable<depne_contact> lk_depne_contact_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_contact>("lk_depne_contact_createdby", null);
+				return this.GetRelatedEntities<depne_contact>("lk_depne_contact_createdby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_contact_createdby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_contact>("lk_depne_contact_createdby", null, value);
+				this.SetRelatedEntities<depne_contact>("lk_depne_contact_createdby", null, value);
 				this.OnPropertyChanged("lk_depne_contact_createdby");
 			}
 		}
@@ -19606,18 +19606,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_contact_createdonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_contact_createdonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_contact> lk_depne_contact_createdonbehalfby
+		public System.Collections.Generic.IEnumerable<depne_contact> lk_depne_contact_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_contact>("lk_depne_contact_createdonbehalfby", null);
+				return this.GetRelatedEntities<depne_contact>("lk_depne_contact_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_contact_createdonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_contact>("lk_depne_contact_createdonbehalfby", null, value);
+				this.SetRelatedEntities<depne_contact>("lk_depne_contact_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_contact_createdonbehalfby");
 			}
 		}
@@ -19626,18 +19626,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_contact_modifiedby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_contact_modifiedby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_contact> lk_depne_contact_modifiedby
+		public System.Collections.Generic.IEnumerable<depne_contact> lk_depne_contact_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_contact>("lk_depne_contact_modifiedby", null);
+				return this.GetRelatedEntities<depne_contact>("lk_depne_contact_modifiedby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_contact_modifiedby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_contact>("lk_depne_contact_modifiedby", null, value);
+				this.SetRelatedEntities<depne_contact>("lk_depne_contact_modifiedby", null, value);
 				this.OnPropertyChanged("lk_depne_contact_modifiedby");
 			}
 		}
@@ -19646,18 +19646,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_contact_modifiedonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_contact_modifiedonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_contact> lk_depne_contact_modifiedonbehalfby
+		public System.Collections.Generic.IEnumerable<depne_contact> lk_depne_contact_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_contact>("lk_depne_contact_modifiedonbehalfby", null);
+				return this.GetRelatedEntities<depne_contact>("lk_depne_contact_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_contact_modifiedonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_contact>("lk_depne_contact_modifiedonbehalfby", null, value);
+				this.SetRelatedEntities<depne_contact>("lk_depne_contact_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_contact_modifiedonbehalfby");
 			}
 		}
@@ -19666,18 +19666,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_professionelshp_createdby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_professionelshp_createdby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp> lk_depne_professionelshp_createdby
+		public System.Collections.Generic.IEnumerable<depne_professionelshp> lk_depne_professionelshp_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("lk_depne_professionelshp_createdby", null);
+				return this.GetRelatedEntities<depne_professionelshp>("lk_depne_professionelshp_createdby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_professionelshp_createdby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("lk_depne_professionelshp_createdby", null, value);
+				this.SetRelatedEntities<depne_professionelshp>("lk_depne_professionelshp_createdby", null, value);
 				this.OnPropertyChanged("lk_depne_professionelshp_createdby");
 			}
 		}
@@ -19686,18 +19686,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_professionelshp_createdonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_professionelshp_createdonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp> lk_depne_professionelshp_createdonbehalfby
+		public System.Collections.Generic.IEnumerable<depne_professionelshp> lk_depne_professionelshp_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("lk_depne_professionelshp_createdonbehalfby", null);
+				return this.GetRelatedEntities<depne_professionelshp>("lk_depne_professionelshp_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_professionelshp_createdonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("lk_depne_professionelshp_createdonbehalfby", null, value);
+				this.SetRelatedEntities<depne_professionelshp>("lk_depne_professionelshp_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_professionelshp_createdonbehalfby");
 			}
 		}
@@ -19706,18 +19706,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_professionelshp_modifiedby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_professionelshp_modifiedby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp> lk_depne_professionelshp_modifiedby
+		public System.Collections.Generic.IEnumerable<depne_professionelshp> lk_depne_professionelshp_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("lk_depne_professionelshp_modifiedby", null);
+				return this.GetRelatedEntities<depne_professionelshp>("lk_depne_professionelshp_modifiedby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_professionelshp_modifiedby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("lk_depne_professionelshp_modifiedby", null, value);
+				this.SetRelatedEntities<depne_professionelshp>("lk_depne_professionelshp_modifiedby", null, value);
 				this.OnPropertyChanged("lk_depne_professionelshp_modifiedby");
 			}
 		}
@@ -19726,18 +19726,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_professionelshp_modifiedonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_professionelshp_modifiedonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp> lk_depne_professionelshp_modifiedonbehalfby
+		public System.Collections.Generic.IEnumerable<depne_professionelshp> lk_depne_professionelshp_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("lk_depne_professionelshp_modifiedonbehalfby", null);
+				return this.GetRelatedEntities<depne_professionelshp>("lk_depne_professionelshp_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_professionelshp_modifiedonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>("lk_depne_professionelshp_modifiedonbehalfby", null, value);
+				this.SetRelatedEntities<depne_professionelshp>("lk_depne_professionelshp_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_professionelshp_modifiedonbehalfby");
 			}
 		}
@@ -19746,18 +19746,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_responsables_createdby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_responsables_createdby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_responsables> lk_depne_responsables_createdby
+		public System.Collections.Generic.IEnumerable<depne_responsables> lk_depne_responsables_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("lk_depne_responsables_createdby", null);
+				return this.GetRelatedEntities<depne_responsables>("lk_depne_responsables_createdby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_responsables_createdby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("lk_depne_responsables_createdby", null, value);
+				this.SetRelatedEntities<depne_responsables>("lk_depne_responsables_createdby", null, value);
 				this.OnPropertyChanged("lk_depne_responsables_createdby");
 			}
 		}
@@ -19766,18 +19766,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_responsables_createdonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_responsables_createdonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_responsables> lk_depne_responsables_createdonbehalfby
+		public System.Collections.Generic.IEnumerable<depne_responsables> lk_depne_responsables_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("lk_depne_responsables_createdonbehalfby", null);
+				return this.GetRelatedEntities<depne_responsables>("lk_depne_responsables_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_responsables_createdonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("lk_depne_responsables_createdonbehalfby", null, value);
+				this.SetRelatedEntities<depne_responsables>("lk_depne_responsables_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_responsables_createdonbehalfby");
 			}
 		}
@@ -19786,18 +19786,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_responsables_modifiedby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_responsables_modifiedby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_responsables> lk_depne_responsables_modifiedby
+		public System.Collections.Generic.IEnumerable<depne_responsables> lk_depne_responsables_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("lk_depne_responsables_modifiedby", null);
+				return this.GetRelatedEntities<depne_responsables>("lk_depne_responsables_modifiedby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_responsables_modifiedby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("lk_depne_responsables_modifiedby", null, value);
+				this.SetRelatedEntities<depne_responsables>("lk_depne_responsables_modifiedby", null, value);
 				this.OnPropertyChanged("lk_depne_responsables_modifiedby");
 			}
 		}
@@ -19806,18 +19806,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_depne_responsables_modifiedonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_depne_responsables_modifiedonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.depne_responsables> lk_depne_responsables_modifiedonbehalfby
+		public System.Collections.Generic.IEnumerable<depne_responsables> lk_depne_responsables_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("lk_depne_responsables_modifiedonbehalfby", null);
+				return this.GetRelatedEntities<depne_responsables>("lk_depne_responsables_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_depne_responsables_modifiedonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.depne_responsables>("lk_depne_responsables_modifiedonbehalfby", null, value);
+				this.SetRelatedEntities<depne_responsables>("lk_depne_responsables_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_depne_responsables_modifiedonbehalfby");
 			}
 		}
@@ -19826,18 +19826,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_email_createdby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_email_createdby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> lk_email_createdby
+		public System.Collections.Generic.IEnumerable<Email> lk_email_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("lk_email_createdby", null);
+				return this.GetRelatedEntities<Email>("lk_email_createdby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_email_createdby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("lk_email_createdby", null, value);
+				this.SetRelatedEntities<Email>("lk_email_createdby", null, value);
 				this.OnPropertyChanged("lk_email_createdby");
 			}
 		}
@@ -19846,18 +19846,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_email_createdonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_email_createdonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> lk_email_createdonbehalfby
+		public System.Collections.Generic.IEnumerable<Email> lk_email_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("lk_email_createdonbehalfby", null);
+				return this.GetRelatedEntities<Email>("lk_email_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_email_createdonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("lk_email_createdonbehalfby", null, value);
+				this.SetRelatedEntities<Email>("lk_email_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_email_createdonbehalfby");
 			}
 		}
@@ -19866,18 +19866,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_email_modifiedby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_email_modifiedby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> lk_email_modifiedby
+		public System.Collections.Generic.IEnumerable<Email> lk_email_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("lk_email_modifiedby", null);
+				return this.GetRelatedEntities<Email>("lk_email_modifiedby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_email_modifiedby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("lk_email_modifiedby", null, value);
+				this.SetRelatedEntities<Email>("lk_email_modifiedby", null, value);
 				this.OnPropertyChanged("lk_email_modifiedby");
 			}
 		}
@@ -19886,18 +19886,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_email_modifiedonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_email_modifiedonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> lk_email_modifiedonbehalfby
+		public System.Collections.Generic.IEnumerable<Email> lk_email_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("lk_email_modifiedonbehalfby", null);
+				return this.GetRelatedEntities<Email>("lk_email_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_email_modifiedonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("lk_email_modifiedonbehalfby", null, value);
+				this.SetRelatedEntities<Email>("lk_email_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_email_modifiedonbehalfby");
 			}
 		}
@@ -19906,18 +19906,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_incidentbase_createdby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_incidentbase_createdby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> lk_incidentbase_createdby
+		public System.Collections.Generic.IEnumerable<Incident> lk_incidentbase_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("lk_incidentbase_createdby", null);
+				return this.GetRelatedEntities<Incident>("lk_incidentbase_createdby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_incidentbase_createdby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("lk_incidentbase_createdby", null, value);
+				this.SetRelatedEntities<Incident>("lk_incidentbase_createdby", null, value);
 				this.OnPropertyChanged("lk_incidentbase_createdby");
 			}
 		}
@@ -19926,18 +19926,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_incidentbase_createdonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_incidentbase_createdonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> lk_incidentbase_createdonbehalfby
+		public System.Collections.Generic.IEnumerable<Incident> lk_incidentbase_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("lk_incidentbase_createdonbehalfby", null);
+				return this.GetRelatedEntities<Incident>("lk_incidentbase_createdonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_incidentbase_createdonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("lk_incidentbase_createdonbehalfby", null, value);
+				this.SetRelatedEntities<Incident>("lk_incidentbase_createdonbehalfby", null, value);
 				this.OnPropertyChanged("lk_incidentbase_createdonbehalfby");
 			}
 		}
@@ -19946,18 +19946,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_incidentbase_modifiedby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_incidentbase_modifiedby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> lk_incidentbase_modifiedby
+		public System.Collections.Generic.IEnumerable<Incident> lk_incidentbase_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("lk_incidentbase_modifiedby", null);
+				return this.GetRelatedEntities<Incident>("lk_incidentbase_modifiedby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_incidentbase_modifiedby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("lk_incidentbase_modifiedby", null, value);
+				this.SetRelatedEntities<Incident>("lk_incidentbase_modifiedby", null, value);
 				this.OnPropertyChanged("lk_incidentbase_modifiedby");
 			}
 		}
@@ -19966,18 +19966,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_incidentbase_modifiedonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_incidentbase_modifiedonbehalfby")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> lk_incidentbase_modifiedonbehalfby
+		public System.Collections.Generic.IEnumerable<Incident> lk_incidentbase_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("lk_incidentbase_modifiedonbehalfby", null);
+				return this.GetRelatedEntities<Incident>("lk_incidentbase_modifiedonbehalfby", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("lk_incidentbase_modifiedonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("lk_incidentbase_modifiedonbehalfby", null, value);
+				this.SetRelatedEntities<Incident>("lk_incidentbase_modifiedonbehalfby", null, value);
 				this.OnPropertyChanged("lk_incidentbase_modifiedonbehalfby");
 			}
 		}
@@ -19986,18 +19986,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_systemuser_createdonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.SystemUser> Referencedlk_systemuser_createdonbehalfby
+		public System.Collections.Generic.IEnumerable<SystemUser> Referencedlk_systemuser_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<SystemUser>("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedlk_systemuser_createdonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<SystemUser>("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedlk_systemuser_createdonbehalfby");
 			}
 		}
@@ -20006,18 +20006,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_systemuser_modifiedonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_systemuser_modifiedonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.SystemUser> Referencedlk_systemuser_modifiedonbehalfby
+		public System.Collections.Generic.IEnumerable<SystemUser> Referencedlk_systemuser_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuser_modifiedonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<SystemUser>("lk_systemuser_modifiedonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedlk_systemuser_modifiedonbehalfby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuser_modifiedonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<SystemUser>("lk_systemuser_modifiedonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedlk_systemuser_modifiedonbehalfby");
 			}
 		}
@@ -20026,18 +20026,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_systemuserbase_createdby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_systemuserbase_createdby", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.SystemUser> Referencedlk_systemuserbase_createdby
+		public System.Collections.Generic.IEnumerable<SystemUser> Referencedlk_systemuserbase_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuserbase_createdby", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<SystemUser>("lk_systemuserbase_createdby", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedlk_systemuserbase_createdby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuserbase_createdby", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<SystemUser>("lk_systemuserbase_createdby", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedlk_systemuserbase_createdby");
 			}
 		}
@@ -20046,18 +20046,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N lk_systemuserbase_modifiedby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_systemuserbase_modifiedby", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.SystemUser> Referencedlk_systemuserbase_modifiedby
+		public System.Collections.Generic.IEnumerable<SystemUser> Referencedlk_systemuserbase_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuserbase_modifiedby", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<SystemUser>("lk_systemuserbase_modifiedby", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencedlk_systemuserbase_modifiedby");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuserbase_modifiedby", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<SystemUser>("lk_systemuserbase_modifiedby", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referencedlk_systemuserbase_modifiedby");
 			}
 		}
@@ -20066,18 +20066,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N system_user_accounts
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("system_user_accounts")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> system_user_accounts
+		public System.Collections.Generic.IEnumerable<Account> system_user_accounts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("system_user_accounts", null);
+				return this.GetRelatedEntities<Account>("system_user_accounts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("system_user_accounts");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("system_user_accounts", null, value);
+				this.SetRelatedEntities<Account>("system_user_accounts", null, value);
 				this.OnPropertyChanged("system_user_accounts");
 			}
 		}
@@ -20086,18 +20086,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N system_user_activity_parties
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("system_user_activity_parties")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> system_user_activity_parties
+		public System.Collections.Generic.IEnumerable<ActivityParty> system_user_activity_parties
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("system_user_activity_parties", null);
+				return this.GetRelatedEntities<ActivityParty>("system_user_activity_parties", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("system_user_activity_parties");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.ActivityParty>("system_user_activity_parties", null, value);
+				this.SetRelatedEntities<ActivityParty>("system_user_activity_parties", null, value);
 				this.OnPropertyChanged("system_user_activity_parties");
 			}
 		}
@@ -20106,18 +20106,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N system_user_contacts
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("system_user_contacts")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Contact> system_user_contacts
+		public System.Collections.Generic.IEnumerable<Contact> system_user_contacts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("system_user_contacts", null);
+				return this.GetRelatedEntities<Contact>("system_user_contacts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("system_user_contacts");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Contact>("system_user_contacts", null, value);
+				this.SetRelatedEntities<Contact>("system_user_contacts", null, value);
 				this.OnPropertyChanged("system_user_contacts");
 			}
 		}
@@ -20126,18 +20126,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N system_user_incidents
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("system_user_incidents")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Incident> system_user_incidents
+		public System.Collections.Generic.IEnumerable<Incident> system_user_incidents
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("system_user_incidents", null);
+				return this.GetRelatedEntities<Incident>("system_user_incidents", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("system_user_incidents");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Incident>("system_user_incidents", null, value);
+				this.SetRelatedEntities<Incident>("system_user_incidents", null, value);
 				this.OnPropertyChanged("system_user_incidents");
 			}
 		}
@@ -20146,18 +20146,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N SystemUser_Email_EmailSender
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("SystemUser_Email_EmailSender")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> SystemUser_Email_EmailSender
+		public System.Collections.Generic.IEnumerable<Email> SystemUser_Email_EmailSender
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("SystemUser_Email_EmailSender", null);
+				return this.GetRelatedEntities<Email>("SystemUser_Email_EmailSender", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("SystemUser_Email_EmailSender");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("SystemUser_Email_EmailSender", null, value);
+				this.SetRelatedEntities<Email>("SystemUser_Email_EmailSender", null, value);
 				this.OnPropertyChanged("SystemUser_Email_EmailSender");
 			}
 		}
@@ -20166,18 +20166,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N user_accounts
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("user_accounts")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Account> user_accounts
+		public System.Collections.Generic.IEnumerable<Account> user_accounts
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("user_accounts", null);
+				return this.GetRelatedEntities<Account>("user_accounts", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("user_accounts");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Account>("user_accounts", null, value);
+				this.SetRelatedEntities<Account>("user_accounts", null, value);
 				this.OnPropertyChanged("user_accounts");
 			}
 		}
@@ -20186,18 +20186,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N user_email
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("user_email")]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.Email> user_email
+		public System.Collections.Generic.IEnumerable<Email> user_email
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("user_email", null);
+				return this.GetRelatedEntities<Email>("user_email", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("user_email");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.Email>("user_email", null, value);
+				this.SetRelatedEntities<Email>("user_email", null, value);
 				this.OnPropertyChanged("user_email");
 			}
 		}
@@ -20206,18 +20206,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// 1:N user_parent_user
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
-		public System.Collections.Generic.IEnumerable<NEACCOMPAGNEMENTCRM.Common.SystemUser> Referenceduser_parent_user
+		public System.Collections.Generic.IEnumerable<SystemUser> Referenceduser_parent_user
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.SystemUser>("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referenced);
+				return this.GetRelatedEntities<SystemUser>("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referenced);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referenceduser_parent_user");
-				this.SetRelatedEntities<NEACCOMPAGNEMENTCRM.Common.SystemUser>("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
+				this.SetRelatedEntities<SystemUser>("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referenceduser_parent_user");
 			}
 		}
@@ -20227,18 +20227,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser Referencinglk_systemuser_createdonbehalfby
+		public SystemUser Referencinglk_systemuser_createdonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<SystemUser>("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencinglk_systemuser_createdonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntity<SystemUser>("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencinglk_systemuser_createdonbehalfby");
 			}
 		}
@@ -20248,18 +20248,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_systemuser_modifiedonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser Referencinglk_systemuser_modifiedonbehalfby
+		public SystemUser Referencinglk_systemuser_modifiedonbehalfby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuser_modifiedonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<SystemUser>("lk_systemuser_modifiedonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencinglk_systemuser_modifiedonbehalfby");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuser_modifiedonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntity<SystemUser>("lk_systemuser_modifiedonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencinglk_systemuser_modifiedonbehalfby");
 			}
 		}
@@ -20269,12 +20269,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_systemuserbase_createdby", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser Referencinglk_systemuserbase_createdby
+		public SystemUser Referencinglk_systemuserbase_createdby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuserbase_createdby", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<SystemUser>("lk_systemuserbase_createdby", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 		}
 		
@@ -20283,12 +20283,12 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedby")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_systemuserbase_modifiedby", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser Referencinglk_systemuserbase_modifiedby
+		public SystemUser Referencinglk_systemuserbase_modifiedby
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("lk_systemuserbase_modifiedby", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<SystemUser>("lk_systemuserbase_modifiedby", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 		}
 		
@@ -20297,18 +20297,18 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("parentsystemuserid")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referencing)]
-		public NEACCOMPAGNEMENTCRM.Common.SystemUser Referencinguser_parent_user
+		public SystemUser Referencinguser_parent_user
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referencing);
+				return this.GetRelatedEntity<SystemUser>("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referencing);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
 				this.OnPropertyChanging("Referencinguser_parent_user");
-				this.SetRelatedEntity<NEACCOMPAGNEMENTCRM.Common.SystemUser>("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
+				this.SetRelatedEntity<SystemUser>("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referencing, value);
 				this.OnPropertyChanged("Referencinguser_parent_user");
 			}
 		}
@@ -20372,110 +20372,110 @@ namespace NEACCOMPAGNEMENTCRM.Common
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="NEACCOMPAGNEMENTCRM.Common.Account"/> entities.
+		/// Gets a binding to the set of all <see cref="Account"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<NEACCOMPAGNEMENTCRM.Common.Account> AccountSet
+		public System.Linq.IQueryable<Account> AccountSet
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.CreateQuery<NEACCOMPAGNEMENTCRM.Common.Account>();
+				return this.CreateQuery<Account>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="NEACCOMPAGNEMENTCRM.Common.ActivityParty"/> entities.
+		/// Gets a binding to the set of all <see cref="ActivityParty"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<NEACCOMPAGNEMENTCRM.Common.ActivityParty> ActivityPartySet
+		public System.Linq.IQueryable<ActivityParty> ActivityPartySet
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.CreateQuery<NEACCOMPAGNEMENTCRM.Common.ActivityParty>();
+				return this.CreateQuery<ActivityParty>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="NEACCOMPAGNEMENTCRM.Common.Contact"/> entities.
+		/// Gets a binding to the set of all <see cref="Contact"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<NEACCOMPAGNEMENTCRM.Common.Contact> ContactSet
+		public System.Linq.IQueryable<Contact> ContactSet
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.CreateQuery<NEACCOMPAGNEMENTCRM.Common.Contact>();
+				return this.CreateQuery<Contact>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="NEACCOMPAGNEMENTCRM.Common.depne_contact"/> entities.
+		/// Gets a binding to the set of all <see cref="depne_contact"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<NEACCOMPAGNEMENTCRM.Common.depne_contact> depne_contactSet
+		public System.Linq.IQueryable<depne_contact> depne_contactSet
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.CreateQuery<NEACCOMPAGNEMENTCRM.Common.depne_contact>();
+				return this.CreateQuery<depne_contact>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="NEACCOMPAGNEMENTCRM.Common.depne_professionelshp"/> entities.
+		/// Gets a binding to the set of all <see cref="depne_professionelshp"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp> depne_professionelshpSet
+		public System.Linq.IQueryable<depne_professionelshp> depne_professionelshpSet
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.CreateQuery<NEACCOMPAGNEMENTCRM.Common.depne_professionelshp>();
+				return this.CreateQuery<depne_professionelshp>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="NEACCOMPAGNEMENTCRM.Common.depne_responsables"/> entities.
+		/// Gets a binding to the set of all <see cref="depne_responsables"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<NEACCOMPAGNEMENTCRM.Common.depne_responsables> depne_responsablesSet
+		public System.Linq.IQueryable<depne_responsables> depne_responsablesSet
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.CreateQuery<NEACCOMPAGNEMENTCRM.Common.depne_responsables>();
+				return this.CreateQuery<depne_responsables>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="NEACCOMPAGNEMENTCRM.Common.Email"/> entities.
+		/// Gets a binding to the set of all <see cref="Email"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<NEACCOMPAGNEMENTCRM.Common.Email> EmailSet
+		public System.Linq.IQueryable<Email> EmailSet
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.CreateQuery<NEACCOMPAGNEMENTCRM.Common.Email>();
+				return this.CreateQuery<Email>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="NEACCOMPAGNEMENTCRM.Common.Incident"/> entities.
+		/// Gets a binding to the set of all <see cref="Incident"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<NEACCOMPAGNEMENTCRM.Common.Incident> IncidentSet
+		public System.Linq.IQueryable<Incident> IncidentSet
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.CreateQuery<NEACCOMPAGNEMENTCRM.Common.Incident>();
+				return this.CreateQuery<Incident>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="NEACCOMPAGNEMENTCRM.Common.SystemUser"/> entities.
+		/// Gets a binding to the set of all <see cref="SystemUser"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<NEACCOMPAGNEMENTCRM.Common.SystemUser> SystemUserSet
+		public System.Linq.IQueryable<SystemUser> SystemUserSet
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.CreateQuery<NEACCOMPAGNEMENTCRM.Common.SystemUser>();
+				return this.CreateQuery<SystemUser>();
 			}
 		}
 	}

@@ -5,3 +5,7 @@
 **/obj
 Tools/AddIns
 packages
+bin
+obj
+Debug
+.vs

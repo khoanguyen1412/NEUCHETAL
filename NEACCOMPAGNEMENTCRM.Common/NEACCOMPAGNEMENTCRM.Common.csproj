@@ -94,6 +94,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonLogic\EmailService.cs" />
     <Compile Include="Common\Actions.cs" />
     <Compile Include="Common\Entities.cs" />
     <Compile Include="Common\Optionset.cs" />

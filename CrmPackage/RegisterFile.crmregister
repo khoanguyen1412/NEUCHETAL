@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
+  <Solutions>
+    <Solution Assembly="NEACCOMPAGNEMENTCRM.NEACCOMPAGNEMENTCRM.Plugins.dll" Id="067b8229-cc14-4a00-9eed-016a5af09704" IsolationMode="Sandbox" SourceType="Database">
+      <PluginTypes>
+        <clear />
+        <Plugin Description="Plug-in to PostLinkIncidentToEmailSenderAction" FriendlyName="PostLinkIncidentToEmailSenderAction" Name="NEACCOMPAGNEMENTCRM.NEACCOMPAGNEMENTCRM.Plugins.PostLinkIncidentToEmailSenderAction" Id="20a37ee5-7383-46a7-b338-a68534808f8a" TypeName="NEACCOMPAGNEMENTCRM.NEACCOMPAGNEMENTCRM.Plugins.PostLinkIncidentToEmailSenderAction">
+          <Steps>
+            <clear />
+            <Step AsyncAutoDelete="false" Name="PostLinkIncidentToEmailSenderAction" Description="depne_LinkIncidentToEmailSender of email" Id="60f53923-9bc8-ed11-a885-0050569fda1a" ImpersonatingUserId="00000000-0000-0000-0000-000000000000" MessageName="depne_LinkIncidentToEmailSender" Mode="Synchronous" PrimaryEntityName="email" Rank="1" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly" MessageEntityId="00000000-0000-0000-0000-000000000000">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+      </PluginTypes>
+    </Solution>
+  </Solutions>
+  <XamlWorkflows />
+</Register>

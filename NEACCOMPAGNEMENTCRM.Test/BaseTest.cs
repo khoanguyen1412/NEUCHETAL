@@ -45,6 +45,56 @@ namespace NEACCOMPAGNEMENTCRM.Test
                     requests.Add(deleteReq);
                 }
 
+                // Remove depne_contact
+                foreach (var record in testHelper.XrmContext.depne_contactSet.Where(p => p.depne_Nom != null && p.depne_Nom.Contains(UNIT_TEST_NAME)))
+                {
+                    DeleteRequest deleteReq = new DeleteRequest()
+                    {
+                        Target = record.ToEntityReference()
+                    };
+                    requests.Add(deleteReq);
+                }
+
+                // Remove depne_professionelshp
+                foreach (var record in testHelper.XrmContext.depne_professionelshpSet.Where(p => p.depne_Nom != null && p.depne_Nom.Contains(UNIT_TEST_NAME)))
+                {
+                    DeleteRequest deleteReq = new DeleteRequest()
+                    {
+                        Target = record.ToEntityReference()
+                    };
+                    requests.Add(deleteReq);
+                }
+
+                // Remove depne_professionelshp
+                foreach (var record in testHelper.XrmContext.depne_responsablesSet.Where(p => p.depne_Nom != null && p.depne_Nom.Contains(UNIT_TEST_NAME)))
+                {
+                    DeleteRequest deleteReq = new DeleteRequest()
+                    {
+                        Target = record.ToEntityReference()
+                    };
+                    requests.Add(deleteReq);
+                }
+
+                // Remove depne_professionelshp
+                foreach (var record in testHelper.XrmContext.IncidentSet.Where(p => p.Title != null && p.Title.Contains(UNIT_TEST_NAME)))
+                {
+                    DeleteRequest deleteReq = new DeleteRequest()
+                    {
+                        Target = record.ToEntityReference()
+                    };
+                    requests.Add(deleteReq);
+                }
+
+                // Remove contact
+                foreach (var record in testHelper.XrmContext.ContactSet.Where(p => p.FirstName != null && p.FirstName.Contains(UNIT_TEST_NAME)))
+                {
+                    DeleteRequest deleteReq = new DeleteRequest()
+                    {
+                        Target = record.ToEntityReference()
+                    };
+                    requests.Add(deleteReq);
+                }
+
                 // Execute delete requests
                 ExecuteMultipleRequest executeMultipleRequest = new ExecuteMultipleRequest
                 {

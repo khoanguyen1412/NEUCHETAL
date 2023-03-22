@@ -1,4 +1,4 @@
-﻿namespace NEACCOMPAGNEMENTCRM.Common.Common
+﻿namespace NEACCOMPAGNEMENTCRM.Common
 {
     using Microsoft.Xrm.Sdk;
     using Microsoft.Xrm.Sdk.Query;
