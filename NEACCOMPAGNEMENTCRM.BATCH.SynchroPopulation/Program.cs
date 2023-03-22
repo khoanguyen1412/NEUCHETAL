@@ -21,7 +21,7 @@ namespace NEACCOMPAGNEMENTCRM.BATCH.SynchroPopulation
         static private string m_logFolderPath;
         static private int m_chunkSize = 300;
         public static IOrganizationService m_orgService { get; set; }
-        public static CrmServiceContext m_xrmContext { get; set; }
+        public static XrmServiceContext m_xrmContext { get; set; }
         // Field
         // Constant
 
@@ -48,7 +48,7 @@ namespace NEACCOMPAGNEMENTCRM.BATCH.SynchroPopulation
             LogHelper.InitLogHelper(infoLogName, m_logFolderPath, true);
             //create service
             m_orgService = CrmHelper.CreateCrmWebService(ConfigurationManager.AppSettings[Constants.ConfigParameter_CrmUrl]);
-            m_xrmContext = new CrmServiceContext(m_orgService);
+            m_xrmContext = new XrmServiceContext(m_orgService);
         }
 
         private static void SynchronizeDataToCrm()
@@ -297,6 +297,71 @@ namespace NEACCOMPAGNEMENTCRM.BATCH.SynchroPopulation
             }
         }
 
+
+        private static void LinkIncidentToEmailSender()
+        {
+            var incidentRef = new EntityReference();
+            var emailSender = "";
+
+            var emailSenderRef = FindEmailSender(emailSender);
+            if (emailSenderRef == null)
+            {
+                return;
+            }
+
+            var updatingIncident = new Incident();
+            switch (emailSenderRef.LogicalName)
+            {
+                case Contact.EntityLogicalName:
+                    updatingIncident.depne_Type = Incident_depne_Type.PopulationInstitution;
+                    updatingIncident.CustomerId = emailSenderRef;
+                    break;
+                case depne_professionelshp.EntityLogicalName:
+                    updatingIncident.depne_Type = Incident_depne_Type.Professionnel;
+                    updatingIncident.depne_Professioneldesante = emailSenderRef;
+                    break;
+                case depne_responsables.EntityLogicalName:
+                    updatingIncident.depne_Type = Incident_depne_Type.Responsable;
+                    updatingIncident.depne_Responsabledemande = emailSenderRef;
+                    break;
+                default:
+                    updatingIncident.depne_Type = Incident_depne_Type.Contact;
+                    updatingIncident.depne_Contactdemande = emailSenderRef;
+                    break;
+            }
+
+            m_orgService.Update(updatingIncident);
+
+        }
+
+        private static EntityReference FindEmailSender(string emailSender)
+        {
+            var contactSender = m_xrmContext.ContactSet.FirstOrDefault(con => con.EMailAddress1 == emailSender);
+            if (contactSender != null)
+            {
+                return contactSender.ToEntityReference();
+            }
+
+            var professionnelSender = m_xrmContext.depne_professionelshpSet.FirstOrDefault(pro => pro.depne_Email == emailSender);
+            if (professionnelSender != null)
+            {
+                return professionnelSender.ToEntityReference();
+            }
+
+            var responsablesSender = m_xrmContext.depne_responsablesSet.FirstOrDefault(res => res.EmailAddress == emailSender);
+            if (responsablesSender != null)
+            {
+                return responsablesSender.ToEntityReference();
+            }
+
+            var depContactSender = m_xrmContext.depne_contactSet.FirstOrDefault(res => res.EmailAddress == emailSender);
+            if (depContactSender != null)
+            {
+                return depContactSender.ToEntityReference();
+            }
+
+            return null;
+        }
         #endregion
     }
 }
